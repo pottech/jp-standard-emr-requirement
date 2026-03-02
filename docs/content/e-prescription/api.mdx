@@ -1,0 +1,74 @@
+---
+title: "API仕様一覧"
+description: "電子処方箋管理サービスのAPI仕様一覧"
+section: "e-prescription"
+category: "api"
+order: 2
+lastUpdated: "2025-12-01"
+sourceDocument: "電子処方箋管理サービスの導入に関するシステムベンダ向け技術解説書"
+---
+
+# API仕様一覧
+
+電子処方箋管理サービスで利用するインターフェイス仕様の一覧です。
+
+## 医療機関（外来処方）
+
+<ApiSpecTable
+  category="medicalInstitution"
+  subcategory="outpatient"
+  specs={[
+    { interfaceId: "OQS-IF-001, OQS-IF-002", name: "処方箋発行形態の管理機能", function: "処方箋発行形態の確認・管理", direction: "request/response", description: "患者が希望する処方箋発行形態（電子処方箋/紙の処方箋）を確認・管理" },
+    { interfaceId: "EPS-IF-201, EPS-IF-202", name: "処方箋登録機能", function: "処方箋登録", direction: "request/response", description: "電子処方箋ファイル（又は処方箋情報提供ファイル）を作成し電子処方箋管理サービスに登録" },
+    { interfaceId: "EPS-IF-211, EPS-IF-212", name: "処方箋参考情報取得機能", function: "処方箋参考情報取得", direction: "request/response", description: "処方内容（控え）のPDFデータを電子処方箋管理サービスから取得" },
+    { interfaceId: "EPS-IF-101, EPS-IF-102", name: "重複投薬等チェック事前処理機能", function: "重複投薬等チェック事前処理", direction: "request/response", description: "処方日時点で服用中の薬剤を抽出する事前処理を実施" },
+    { interfaceId: "EPS-IF-219, EPS-IF-103", name: "重複投薬等チェック機能", function: "重複投薬等チェック", direction: "request/response", description: "確定前処方箋情報を含む重複投薬等チェック要求を送信し結果を取得" },
+    { interfaceId: "EPS-IF-203, EPS-IF-204", name: "処方箋取消機能", function: "処方箋取消", direction: "request/response", description: "登録済みの電子処方箋ファイルを取り消す" },
+    { interfaceId: "EPS-IF-207, EPS-IF-208", name: "処方箋取消UNDO機能", function: "処方箋取消UNDO", direction: "request/response", description: "誤って取り消した電子処方箋ファイルを元に戻す" },
+    { interfaceId: "EPS-IF-205, EPS-IF-206", name: "処方箋変更機能", function: "処方箋変更", direction: "request/response", description: "登録済みの電子処方箋ファイルを変更する" },
+    { interfaceId: "EPS-IF-209, EPS-IF-210", name: "処方箋変更UNDO機能", function: "処方箋変更UNDO", direction: "request/response", description: "誤って変更した電子処方箋ファイルを元に戻す" },
+    { interfaceId: "EPS-IF-217/218, EPS-IF-213-216", name: "処方箋状況及び調剤結果取得機能", function: "調剤結果取得", direction: "request/response", description: "発行済み処方箋に対する薬局の調剤結果等を取得（単件・一括）" },
+    { interfaceId: "EPS-IF-220, EPS-IF-221", name: "処方箋ID検索機能", function: "処方箋ID検索", direction: "request/response", description: "発行済みの電子処方箋ファイルに紐づく処方箋IDを取得" },
+    { interfaceId: "YZK-IF-001, YZK-IF-002", name: "薬剤情報等管理機能", function: "薬剤情報閲覧", direction: "request/response", description: "患者が過去に処方・調剤された薬剤情報を閲覧（患者同意が前提）" }
+  ]}
+/>
+
+## 医療機関（院内処方）
+
+<ApiSpecTable
+  category="medicalInstitution"
+  subcategory="inHospital"
+  specs={[
+    { interfaceId: "EPS-IF-401, EPS-IF-402", name: "院内処方等登録機能", function: "院内処方等登録", direction: "request/response", description: "院内処方等情報を電子処方箋管理サービスに登録" },
+    { interfaceId: "EPS-IF-101, EPS-IF-102", name: "重複投薬等チェック事前処理機能", function: "重複投薬等チェック事前処理", direction: "request/response", description: "院外処方箋と同じインターフェイスを利用" },
+    { interfaceId: "EPS-IF-409, EPS-IF-103", name: "重複投薬等チェック機能", function: "重複投薬等チェック", direction: "request/response", description: "確定前院内処方等情報に対するチェック実施" },
+    { interfaceId: "EPS-IF-403, EPS-IF-404", name: "院内処方等取消機能", function: "院内処方等取消", direction: "request/response", description: "登録済みの院内処方等情報提供ファイルを取り消す" },
+    { interfaceId: "EPS-IF-405, EPS-IF-406", name: "院内処方等変更機能", function: "院内処方等変更", direction: "request/response", description: "登録済みの院内処方等情報提供ファイルを変更" },
+    { interfaceId: "EPS-IF-407, EPS-IF-408", name: "院内処方等ID検索機能", function: "院内処方等ID検索", direction: "request/response", description: "院内処方等IDを取得" },
+    { interfaceId: "YZK-IF-001, YZK-IF-002", name: "薬剤情報等管理機能", function: "薬剤情報閲覧", direction: "request/response", description: "院外処方箋と同じインターフェイスを利用" }
+  ]}
+/>
+
+## 薬局
+
+<ApiSpecTable
+  category="pharmacy"
+  subcategory="dispensing"
+  specs={[
+    { interfaceId: "EPS-IF-301, EPS-IF-302", name: "処方箋受付機能", function: "処方箋受付", direction: "request/response", description: "電子処方箋ファイルを薬局システムに取り込み。電子署名の検証も実施" },
+    { interfaceId: "EPS-IF-101, EPS-IF-102", name: "重複投薬等チェック事前処理機能", function: "重複投薬等チェック事前処理", direction: "request/response", description: "調剤日時点で服用中の薬剤を抽出する事前処理を実施" },
+    { interfaceId: "EPS-IF-315, EPS-IF-103", name: "重複投薬等チェック機能", function: "重複投薬等チェック", direction: "request/response", description: "処方箋受付時だけでなく任意のタイミングでチェック可能" },
+    { interfaceId: "EPS-IF-303, EPS-IF-304", name: "処方箋受付取消機能", function: "処方箋受付取消", direction: "request/response", description: "取り込んだ電子処方箋ファイルの受付を取り消す" },
+    { interfaceId: "EPS-IF-307, EPS-IF-308", name: "調剤結果登録機能", function: "調剤結果登録", direction: "request/response", description: "調剤情報提供ファイルを作成し登録。電子処方箋の場合は電子署名必須" },
+    { interfaceId: "EPS-IF-305, EPS-IF-306", name: "処方箋回収機能", function: "処方箋回収", direction: "request/response", description: "調剤を行わない旨及び理由を登録" },
+    { interfaceId: "EPS-IF-318, EPS-IF-319", name: "処方箋回収UNDO機能", function: "処方箋回収UNDO", direction: "request/response", description: "処方箋回収の処理を元に戻す" },
+    { interfaceId: "EPS-IF-309, EPS-IF-310", name: "調剤結果取消機能", function: "調剤結果取消", direction: "request/response", description: "調剤情報提供ファイルを取り消す" },
+    { interfaceId: "EPS-IF-311, EPS-IF-312", name: "調剤結果変更機能", function: "調剤結果変更", direction: "request/response", description: "調剤情報提供ファイルを変更" },
+    { interfaceId: "EPS-IF-313/314, EPS-IF-316/317", name: "調剤済み電子処方箋検索・取得機能", function: "調剤済み電子処方箋検索・取得", direction: "request/response", description: "電子処方箋管理サービス内の調剤済み電子処方箋ファイルを検索し取得" },
+    { interfaceId: "EPS-IF-320, EPS-IF-321", name: "処方箋ID検索機能", function: "処方箋ID検索", direction: "request/response", description: "処方箋IDを取得" },
+    { interfaceId: "EPS-IF-322, EPS-IF-323", name: "調剤結果ID検索機能", function: "調剤結果ID検索", direction: "request/response", description: "調剤結果IDを取得" },
+    { interfaceId: "YZK-IF-001, YZK-IF-002", name: "薬剤情報等管理機能", function: "薬剤情報閲覧", direction: "request/response", description: "患者の過去の処方・調剤薬剤情報を閲覧" },
+    { interfaceId: "EPS-IF-324, EPS-IF-325", name: "保管調剤結果登録機能", function: "保管調剤結果登録", direction: "request/response", description: "調剤結果情報を電子処方箋管理サービスに保存" },
+    { interfaceId: "EPS-IF-328, EPS-IF-329", name: "保管調剤結果取得機能", function: "保管調剤結果取得", direction: "request/response", description: "保管した調剤結果情報を任意のタイミングで取得" }
+  ]}
+/>

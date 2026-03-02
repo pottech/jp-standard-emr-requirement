@@ -1,0 +1,73 @@
+---
+title: "ワークフロー"
+description: "電子処方箋管理サービスのワークフロー"
+section: "e-prescription"
+category: "workflow"
+order: 3
+lastUpdated: "2025-12-01"
+sourceDocument: "電子処方箋管理サービスの導入に関するシステムベンダ向け技術解説書"
+---
+
+# ワークフロー
+
+電子処方箋管理サービスにおける主要なワークフローを解説します。
+
+## 処方箋発行フロー（院外処方箋）
+
+<WorkflowStep order={1} actor="医療機関（電子カルテシステム）" action="確定前処方箋情報の作成">
+  電子カルテシステムで確定前処方箋情報の作成および重複投薬等チェック要求を行う。
+</WorkflowStep>
+
+<WorkflowStep order={2} actor="医師" action="処方内容の確定">
+  医師が処方内容を確認・確定する。重複投薬等チェック結果を踏まえて最終的な処方内容を決定する。
+</WorkflowStep>
+
+<WorkflowStep order={3} actor="医療機関（電子カルテシステム）" action="電子処方箋の登録">
+  電子処方箋の場合：電子処方箋管理サービスに電子処方箋ファイル（処方箋情報＋電子署名）を登録する。引換番号と処方箋IDが発行される。
+</WorkflowStep>
+
+<WorkflowStep order={3} actor="医療機関（電子カルテシステム）" action="処方箋情報提供ファイルの登録（紙の場合）">
+  紙の処方箋の場合：電子処方箋管理サービスに処方箋情報提供ファイルを登録する。紙の処方箋が原本となるため電子署名は付与されない。
+</WorkflowStep>
+
+<WorkflowStep order={4} actor="医療機関" action="調剤結果の取得">
+  薬局の調剤完了後、調剤結果を取得する。
+</WorkflowStep>
+
+## 調剤フロー（薬局）
+
+<WorkflowStep order={1} actor="薬局システム" action="電子処方箋ファイルの受付">
+  電子処方箋管理サービスから電子処方箋ファイル（又は処方箋情報提供ファイル）を取得し、薬局システムに取り込む。電子署名の検証も実施する。
+</WorkflowStep>
+
+<WorkflowStep order={2} actor="薬剤師" action="調剤内容の確定">
+  処方内容を確認し、重複投薬等チェックを実施した上で調剤内容を確定する。
+</WorkflowStep>
+
+<WorkflowStep order={3} actor="薬局システム" action="調剤結果の登録">
+  電子処方箋の場合：調剤結果＋電子署名を電子処方箋管理サービスに登録する。紙の処方箋の場合：調剤結果（電子署名任意）を登録する。
+</WorkflowStep>
+
+## 院内処方フロー
+
+<WorkflowStep order={1} actor="医療機関（電子カルテシステム）" action="院内処方等情報の作成">
+  院内処方等情報（処方情報、調剤情報、投薬情報）を電子カルテシステムで作成する。
+</WorkflowStep>
+
+<WorkflowStep order={2} actor="電子処方箋管理サービス" action="重複投薬等チェック事前処理">
+  処方等年月日時点で服用中の薬剤を抽出する事前処理を実施する。
+</WorkflowStep>
+
+<WorkflowStep order={3} actor="電子処方箋管理サービス" action="重複投薬等チェック">
+  確定前院内処方等情報に対する重複投薬等チェックを実施する。
+</WorkflowStep>
+
+<WorkflowStep order={4} actor="医療機関" action="院内処方等情報提供ファイルの登録">
+  院内処方等情報提供ファイルを電子処方箋管理サービスに登録する。電子署名は不要。
+</WorkflowStep>
+
+<WorkflowStep order={5} actor="電子処方箋管理サービス" action="院内処方等IDの発行">
+  院内処方等IDが発行される。
+</WorkflowStep>
+
+> **注記**: 令和7年1月より院内処方も対象。電子署名は不要だが、電子署名を付して登録した場合でも署名検証は行われない。

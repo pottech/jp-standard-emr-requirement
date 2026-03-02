@@ -1,0 +1,152 @@
+{
+  "siteTitle": "EMR標準仕様ドキュメント",
+  "siteDescription": "国が定めた電子カルテ・レセプトコンピュータの標準要件をわかりやすく公開するサイト",
+  "navigation": [
+    {
+      "title": "トップ",
+      "path": "/",
+      "order": 0
+    },
+    {
+      "title": "電子カルテ",
+      "path": "/emr",
+      "order": 1,
+      "children": [
+        { "title": "診療所向け", "path": "/emr/clinic", "order": 1 },
+        { "title": "病院向け", "path": "/emr/hospital", "order": 2 }
+      ]
+    },
+    {
+      "title": "レセプトコンピュータ",
+      "path": "/rececom",
+      "order": 2,
+      "children": [
+        { "title": "診療所向け", "path": "/rececom/clinic", "order": 1 },
+        { "title": "病院向け", "path": "/rececom/hospital", "order": 2 }
+      ]
+    },
+    {
+      "title": "電子処方箋管理サービス",
+      "path": "/e-prescription",
+      "order": 3,
+      "children": [
+        { "title": "概要", "path": "/e-prescription", "order": 0 },
+        { "title": "概要・背景", "path": "/e-prescription/overview", "order": 1 },
+        { "title": "API仕様一覧", "path": "/e-prescription/api", "order": 2 },
+        { "title": "ワークフロー", "path": "/e-prescription/workflow", "order": 3 },
+        { "title": "電子署名", "path": "/e-prescription/signature", "order": 4 }
+      ]
+    },
+    {
+      "title": "オンライン資格確認等システム",
+      "path": "/qualification",
+      "order": 4,
+      "children": [
+        { "title": "概要", "path": "/qualification", "order": 0 },
+        { "title": "概要・背景", "path": "/qualification/overview", "order": 1 },
+        { "title": "認証方式", "path": "/qualification/authentication", "order": 2 },
+        { "title": "ネットワーク構成", "path": "/qualification/network", "order": 3 },
+        { "title": "セキュリティ", "path": "/qualification/security", "order": 4 }
+      ]
+    },
+    {
+      "title": "主治医意見書電送サービス",
+      "path": "/opinion-letter",
+      "order": 5,
+      "children": [
+        { "title": "概要", "path": "/opinion-letter", "order": 0 },
+        { "title": "概要・背景", "path": "/opinion-letter/overview", "order": 1 },
+        { "title": "システム機能", "path": "/opinion-letter/functions", "order": 2 },
+        { "title": "API仕様", "path": "/opinion-letter/api", "order": 3 },
+        { "title": "ネットワーク構成", "path": "/opinion-letter/network", "order": 4 },
+        { "title": "セキュリティ", "path": "/opinion-letter/security", "order": 5 }
+      ]
+    },
+    {
+      "title": "ウェブアクセシビリティ",
+      "path": "/accessibility",
+      "order": 6,
+      "children": [
+        { "title": "概要", "path": "/accessibility", "order": 0 },
+        { "title": "基礎知識", "path": "/accessibility/basics", "order": 1 },
+        { "title": "標準・規格", "path": "/accessibility/standards", "order": 2 },
+        { "title": "達成基準", "path": "/accessibility/criteria", "order": 3 },
+        { "title": "実践プロセス", "path": "/accessibility/process", "order": 4 }
+      ]
+    },
+    {
+      "title": "比較表",
+      "path": "/comparison",
+      "order": 7
+    },
+    {
+      "title": "用語集",
+      "path": "/glossary",
+      "order": 8
+    }
+  ],
+  "sourceDocuments": [
+    {
+      "id": "clinic-emr",
+      "title": "医科診療所向け電子カルテ標準仕様書（基本要件）（案）",
+      "publisher": "厚生労働省",
+      "sections": ["emr/clinic"]
+    },
+    {
+      "id": "hospital-emr",
+      "title": "中小病院向け電子カルテ標準仕様書（基本要件）（案）",
+      "publisher": "厚生労働省",
+      "sections": ["emr/hospital"]
+    },
+    {
+      "id": "clinic-rececom",
+      "title": "医科診療所向けレセプトコンピュータ標準仕様書（基本要件）（案）",
+      "publisher": "厚生労働省",
+      "sections": ["rececom/clinic"]
+    },
+    {
+      "id": "hospital-rececom",
+      "title": "中小病院向けレセプトコンピュータ標準仕様書（基本要件）（案）",
+      "publisher": "厚生労働省",
+      "sections": ["rececom/hospital"]
+    },
+    {
+      "id": "e-prescription",
+      "title": "電子処方箋管理サービスの導入に関するシステムベンダ向け技術解説書【医療機関・薬局】",
+      "publisher": "厚生労働省 医薬局",
+      "version": "2.02版",
+      "lastUpdated": "令和7年12月11日",
+      "sections": ["e-prescription"]
+    },
+    {
+      "id": "qualification",
+      "title": "オンライン資格確認等システムの導入に関するシステムベンダ向け技術解説書【医療機関・薬局】",
+      "publisher": "厚生労働省 保険局",
+      "version": "1.5",
+      "lastUpdated": "令和7年12月1日",
+      "sections": ["qualification"]
+    },
+    {
+      "id": "opinion-letter",
+      "title": "主治医意見書／請求書 電送サービスの導入に関するシステムベンダ向け技術解説書",
+      "publisher": "厚生労働省 老健局",
+      "version": "1.02",
+      "lastUpdated": "令和8年2月9日",
+      "sections": ["opinion-letter"]
+    },
+    {
+      "id": "accessibility",
+      "title": "ウェブアクセシビリティ導入ガイドブック",
+      "publisher": "デジタル庁",
+      "version": "DS-671.2",
+      "lastUpdated": "2025年10月16日",
+      "sections": ["accessibility"]
+    }
+  ],
+  "requirementTypes": [
+    { "id": "遵守", "label": "遵守", "description": "適合が必須の要件", "color": "red" },
+    { "id": "推奨", "label": "推奨", "description": "適合が望ましい要件", "color": "blue" },
+    { "id": "不可", "label": "不可", "description": "行ってはならない事項", "color": "gray" },
+    { "id": "参考", "label": "参考", "description": "参考情報", "color": "green" }
+  ]
+}

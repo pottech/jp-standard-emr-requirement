@@ -1,0 +1,10 @@
+{
+  "name": "emr-doc",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter site dev",
+    "build": "pnpm --filter site build",
+    "start": "pnpm --filter site start",
+    "lint": "pnpm --filter site lint"
+  }
+}

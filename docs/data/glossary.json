@@ -1,0 +1,1453 @@
+{
+  "terms": [
+    {
+      "term": "ISMS",
+      "reading": "あいえすえむえす",
+      "definition": "情報セキュリティマネジメントシステム（Information Security Management System）。ISO/IEC 27001に基づく認証制度。電子カルテの非機能要件において、ISMS認証及びISMSクラウドセキュリティ認証の取得がセキュリティ要件として規定される。",
+      "englishTerm": "ISMS (Information Security Management System)",
+      "relatedTerms": [
+        "ISMAP",
+        "電子カルテ"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "ICカード",
+      "reading": "あいしーかーど",
+      "definition": "医師・薬剤師が電子署名を行う方法として、ローカル署名やカードレス署名を利用する際に使用する物理的なカード。ローカル署名、カードレス署名で利用できるICカードとしてHPKIカードがあり、カードレス署名ではマイナンバーカードを活用することも可能。",
+      "englishTerm": "IC Card",
+      "relatedTerms": [
+        "HPKIカード",
+        "マイナンバーカード",
+        "電子署名"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "IPsec+IKE接続方式",
+      "reading": "あいぴーせっくぷらすあいけーいーせつぞくほうしき",
+      "definition": "インターネットを経由してIPsecトンネルにより安全な接続を確保する方式。ルーター型、クライアント型/PCキー型/USBキー型がある。IPv4での接続方式。",
+      "englishTerm": "IPsec+IKE Connection Method",
+      "relatedTerms": [
+        "オンライン請求ネットワーク",
+        "IP-VPN接続方式"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "IP-VPN接続方式",
+      "reading": "あいぴーぶいぴーえぬせつぞくほうしき",
+      "definition": "閉域IP網を利用した接続方式。レセプトのオンライン請求で実績のあるオンライン請求ネットワークを利用する。IPv4（オンライン請求）とIPv6（オンライン資格確認等）を併用。光回線に限る。",
+      "englishTerm": "IP-VPN Connection Method",
+      "relatedTerms": [
+        "オンライン請求ネットワーク",
+        "IPsec+IKE接続方式"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "アクセシビリティ",
+      "reading": "あくせしびりてぃ",
+      "definition": "「近づくことができる」という意味で、「ウェブや情報そのものへ到達できること」や「製品やサービスを利用できること」という意味で使われる。一般的に「障害者・高齢者を含む利用者のアクセスしやすさ」と説明される。",
+      "englishTerm": "Accessibility",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "アクセシビリティ・オーバーレイ",
+      "reading": "あくせしびりてぃおーばーれい",
+      "definition": "ウェブサイトやウェブシステムにスクリプトを追加することで、アクセシビリティを向上しようとする仕組み。JavaScriptで実装されることがほとんど。使用は非推奨。",
+      "englishTerm": "Accessibility Overlay",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "アクセストークン",
+      "reading": "あくせすとーくん",
+      "definition": "システムに接続する端末が認証済みであることを識別するための情報。電子処方箋においては、カードレス署名を行う場合、鍵管理サービスにアクセストークンを発行してもらった上で、鍵管理サービスで管理される電子署名を用いた電子署名を行う。",
+      "englishTerm": "Access Token",
+      "relatedTerms": [
+        "カードレス署名",
+        "鍵管理サービス",
+        "電子署名"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "医師",
+      "reading": "いし",
+      "definition": "医師、歯科医師を指す。",
+      "englishTerm": "Physician / Doctor",
+      "relatedTerms": [
+        "電子署名",
+        "処方箋情報"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "ISMAP",
+      "reading": "いすまっぷ",
+      "definition": "政府情報システムのためのセキュリティ評価制度（Information system Security Management and Assessment Program）。電子カルテの非機能要件において、ISMAP認証またはISMS認証及びISMSクラウドセキュリティ認証の取得が求められる。",
+      "englishTerm": "ISMAP (Information system Security Management and Assessment Program)",
+      "relatedTerms": [
+        "ガバメントクラウド",
+        "ISMS"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "一部準拠",
+      "reading": "いちぶじゅんきょ",
+      "definition": "JIS X 8341-3:2016の対応度表記で、達成基準の一部を満たしている場合に使える表記。一部準拠の場合は追加で今後の対応方針を記載する。",
+      "englishTerm": "Partial Compliance",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "医薬品マスタ",
+      "reading": "いやくひんますた",
+      "definition": "電子処方箋管理サービスと、電子処方箋管理サービスを利用する医療機関・薬局システムで利用する医薬品についてのマスタ。",
+      "englishTerm": "Drug Master",
+      "relatedTerms": [
+        "電子処方箋管理サービス",
+        "用法マスタ"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "医療機関・薬局のシステム",
+      "reading": "いりょうきかん・やっきょくのしすてむ",
+      "definition": "レセプトコンピュータ／医事会計システム、電子カルテシステム、調剤システムの総称。",
+      "englishTerm": "Medical Institution and Pharmacy Systems",
+      "relatedTerms": [
+        "電子カルテ",
+        "レセプトコンピュータ",
+        "薬局システム"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "医療情報セキュリティ開示書（SDS）",
+      "reading": "いりょうじょうほうせきゅりてぃかいじしょ（えすでぃーえす）",
+      "definition": "電子カルテベンダが医療機関に対して開示するセキュリティ関連情報をまとめた文書。標準仕様書では、医療機関等の要請があった場合にSDS Ver5.0を開示することが遵守要件として規定されている。",
+      "englishTerm": "Medical Information Security Disclosure Statement (SDS)",
+      "relatedTerms": [
+        "電子カルテ",
+        "ISMS"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "医療DX",
+      "reading": "いりょうでぃーえっくす",
+      "definition": "医療分野におけるデジタルトランスフォーメーション。国が推進する施策として、電子カルテの標準化、オンライン資格確認、電子処方箋、電子カルテ情報共有サービス、共通算定モジュール、介護情報基盤との連携等が含まれる。",
+      "englishTerm": "Medical DX (Digital Transformation)",
+      "relatedTerms": [
+        "電子カルテ",
+        "オンライン資格確認等システム",
+        "電子処方箋管理サービス",
+        "電子カルテ情報共有サービス",
+        "共通算定モジュール",
+        "診療報酬改定DX"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "医療保険者等",
+      "reading": "いりょうほけんしゃとう",
+      "definition": "全国健康保険協会、健康保険組合、国民健康保険組合、後期高齢者医療広域連合、市町村国民健康保険、国家公務員共済組合、地方公務員共済組合、及び日本私立学校振興・共済事業団の総称。",
+      "englishTerm": "Medical Insurers",
+      "relatedTerms": [
+        "資格情報",
+        "個人単位被保険者番号"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "院内処方等ID",
+      "reading": "いんないしょほうとうあいでぃー",
+      "definition": "院内処方等情報提供ファイルを電子処方箋管理サービスに登録し、発行されるID。電子処方箋管理サービス内の院内処方等情報提供ファイルを管理するため、一意に採番される。",
+      "englishTerm": "In-Hospital Prescription ID",
+      "relatedTerms": [
+        "院内処方等情報",
+        "院内処方等情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "院内処方等情報",
+      "reading": "いんないしょほうとうじょうほう",
+      "definition": "院内処方を行う医療機関のシステム上、院内処方を行う医薬品の名称や用法・用量等が記録され、一定のファイル形式で電子的に作成・保存されたもの。院内処方における処方の情報だけでなく、調剤や投薬の情報も含む。",
+      "englishTerm": "In-Hospital Prescription Information",
+      "relatedTerms": [
+        "院内処方等ID",
+        "院内処方等情報提供ファイル",
+        "電子処方箋管理サービス"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "院内処方等情報提供ファイル",
+      "reading": "いんないしょほうとうじょうほうていきょうふぁいる",
+      "definition": "医療機関が院内処方等情報を記録し、電子処方箋管理サービスに登録するファイルを指す。",
+      "englishTerm": "In-Hospital Prescription Information File",
+      "relatedTerms": [
+        "院内処方等情報",
+        "院内処方等ID"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "WAI-ARIA",
+      "reading": "うぇいありあ",
+      "definition": "W3Cで策定している技術仕様。HTMLだけではコンテンツの変化やUIの状態変化を伝えられない場合に、HTMLに加えて使用することで、ページ移動を伴わない動的なページ内コンテンツの変化を、スクリーンリーダーが認識して利用者に伝達できるように補完する。",
+      "englishTerm": "Web Accessibility Initiative - Accessible Rich Internet Applications",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "WAIC",
+      "reading": "うぇいく",
+      "definition": "情報通信アクセス協議会ウェブアクセシビリティ基盤委員会（Web Accessibility Infrastructure Committee）。WCAGの日本語訳やJIS X 8341-3:2016関連のガイドラインを公開している。",
+      "englishTerm": "Web Accessibility Infrastructure Committee",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "ウェブアクセシビリティ",
+      "reading": "うぇぶあくせしびりてぃ",
+      "definition": "利用者の障害の有無やその程度、年齢や利用環境にかかわらず、ウェブで提供されている情報やサービスを利用できること、またはその到達度。",
+      "englishTerm": "Web Accessibility",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "HPKIカード",
+      "reading": "えいちぴーけーあいかーど",
+      "definition": "保健医療福祉分野の公開鍵基盤（Healthcare Public Key Infrastructure）に基づくICカード。医師・薬剤師の電子署名に使用される。ローカル署名ではHPKIカードのみが利用可能。",
+      "englishTerm": "HPKI Card",
+      "relatedTerms": [
+        "ローカル署名",
+        "電子署名",
+        "ICカード"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "HPKIセカンド電子証明書リモート署名",
+      "reading": "えいちぴーけーあいせかんどでんししょうめいしょりもーとしょめい",
+      "definition": "カードレス署名の方法の1つであり、一般財団法人医療情報システム開発センター（MEDIS）が管理する鍵管理サービスのセカンド電子証明書を利用した電子署名。",
+      "englishTerm": "HPKI Second Electronic Certificate Remote Signature",
+      "relatedTerms": [
+        "カードレス署名",
+        "セカンド電子証明書",
+        "鍵管理サービス"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "枝番",
+      "reading": "えだばん",
+      "definition": "個人を識別可能とするため、被保険者資格に係る記号・番号（世帯単位）に付与する2桁の番号。",
+      "englishTerm": "Branch Number",
+      "relatedTerms": [
+        "個人単位被保険者番号",
+        "資格情報"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "音声解説",
+      "reading": "おんせいかいせつ",
+      "definition": "登場人物の動作や表情、場面の移り変わりなど視覚的な情報を音声で伝えるもの。",
+      "englishTerm": "Audio Description",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "オンライン資格確認等",
+      "reading": "おんらいんしかくかくにんとう",
+      "definition": "以下のサービスの総称。(1)オンライン資格確認サービス、(2)薬剤情報閲覧サービス、(3)特定健診情報閲覧サービス、(4)レセプト振替サービス。",
+      "englishTerm": "Online Qualification Verification Services",
+      "relatedTerms": [
+        "オンライン資格確認等システム"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "オンライン資格確認等システム",
+      "reading": "おんらいんしかくかくにんとうしすてむ",
+      "definition": "オンライン資格確認システム、薬剤情報閲覧システム、特定健診情報閲覧システム、レセプト振替システムの総称。加入者（患者）が医療機関・薬局を受診する際、マイナンバーカードの利用者証明用電子証明書、または資格確認書を用いて、オンラインで資格確認を行うシステム。",
+      "englishTerm": "Online Qualification Verification System",
+      "relatedTerms": [
+        "資格確認端末",
+        "オンライン資格確認等連携ソフト",
+        "マイナンバーカード",
+        "資格確認書"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "オンライン資格確認等連携ソフト",
+      "reading": "おんらいんしかくかくにんとうれんけいそふと",
+      "definition": "社会保険診療報酬支払基金が提供する、被保険者番号を利用した資格確認、照会番号の登録、薬剤情報・特定健診情報の取得等を行うためのアプリケーションソフト。電子処方箋管理サービスの利用にあたっても本ソフトを利用する。",
+      "englishTerm": "Online Qualification Verification Linkage Software",
+      "relatedTerms": [
+        "支払基金",
+        "資格確認端末",
+        "オンライン資格確認等システム"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "オンライン資格確認用Webサービス（マイナ在宅受付Web）",
+      "reading": "おんらいんしかくかくにんようウェブサービス（まいなざいたくうけつけウェブ）",
+      "definition": "オンライン診療・オンライン服薬指導において、マイナンバーカードを利用した資格確認・診療/薬剤情報・特定健診情報の閲覧同意等を行うためのWebサービス。",
+      "englishTerm": "Online Qualification Verification Web Service",
+      "relatedTerms": [
+        "オンライン資格確認等システム",
+        "マイナンバーカード"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "オンライン資格確認用電子証明書",
+      "reading": "おんらいんしかくかくにんようでんししょうめいしょ",
+      "definition": "医療機関・薬局がオンライン資格確認等システム利用時の機関認証に用いる電子証明書。",
+      "englishTerm": "Online Qualification Verification Electronic Certificate",
+      "relatedTerms": [
+        "オンライン請求用電子証明書",
+        "資格確認端末"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "オンライン請求ネットワーク",
+      "reading": "おんらいんせいきゅうねっとわーく",
+      "definition": "医療機関・薬局と審査支払機関を結ぶ閉域ネットワーク。レセプトのオンライン請求やオンライン資格確認等システム、電子処方箋管理サービスへの接続に利用される。IP-VPN接続方式またはIPsec+IKE接続方式で接続する。",
+      "englishTerm": "Online Billing Network",
+      "relatedTerms": [
+        "IP-VPN接続方式",
+        "IPsec+IKE接続方式",
+        "電子処方箋管理サービス",
+        "オンライン資格確認等システム"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "オンライン請求用電子証明書",
+      "reading": "おんらいんせいきゅうようでんししょうめいしょ",
+      "definition": "医療機関・薬局がオンライン請求システム利用時の機関認証に用いる電子証明書。",
+      "englishTerm": "Online Billing Electronic Certificate",
+      "relatedTerms": [
+        "オンライン資格確認用電子証明書",
+        "支払基金"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "カードレス署名",
+      "reading": "かーどれすしょめい",
+      "definition": "支払基金・国保中央会以外の主体が提供する鍵管理サービスに格納される電子証明書（セカンド電子証明書）を利用して電子署名を付与する方法。鍵管理サービスとの接続にはWebAPI方式による通信が必要。",
+      "englishTerm": "Cardless Signature",
+      "relatedTerms": [
+        "ローカル署名",
+        "鍵管理サービス",
+        "セカンド電子証明書",
+        "アクセストークン",
+        "FIDO認証"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "介護情報基盤",
+      "reading": "かいごじょうほうきばん",
+      "definition": "介護分野の情報を管理・共有するための基盤システム。電子カルテ標準仕様書では、介護情報基盤「外部インタフェース仕様書」に規定されたインターフェイスとの接続機能を有することが推奨される。",
+      "englishTerm": "Long-term Care Information Platform",
+      "relatedTerms": [
+        "医療DX",
+        "電子カルテ"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "顔認証",
+      "reading": "かおにんしょう",
+      "definition": "顔によって個人を認識し、認証を行う仕組み。",
+      "englishTerm": "Facial Authentication",
+      "relatedTerms": [
+        "顔認証付きカードリーダー",
+        "PIN無し認証"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "顔認証付きカードリーダー",
+      "reading": "かおにんしょうつきかーどりーだー",
+      "definition": "PIN無し認証を行うに当たり、マイナンバーカードの写真データを用いて顔認証を行うカードリーダー。患者の顔と実物のマイナンバーカードのICチップ内の顔画像を照合し認証する。患者が処方箋発行形態の選択や、薬局での調剤対象の処方箋選択などを行うことができる。",
+      "englishTerm": "Face Authentication Card Reader",
+      "relatedTerms": [
+        "PIN無し認証",
+        "マイナンバーカード",
+        "汎用カードリーダー",
+        "本人認証用カードリーダソフト"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "鍵管理サービス",
+      "reading": "かぎかんりさーびす",
+      "definition": "支払基金・国保中央会以外の主体が電子署名に必要となる電子証明書を管理するシステム。カードレス署名を行うにあたっては、鍵管理サービスに接続し、同サービスに格納される自身の電子証明書を用いて電子署名を行う。",
+      "englishTerm": "Key Management Service",
+      "relatedTerms": [
+        "カードレス署名",
+        "セカンド電子証明書",
+        "アクセストークン",
+        "リモート署名サーバサービス"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "確定前院内処方等情報",
+      "reading": "かくていまえいんないしょほうとうじょうほう",
+      "definition": "院内処方を行う医療機関において、院内処方等情報が確定する前の情報を指す。重複投薬等チェックなどを行い、処方や調剤を行う薬剤を確定したものを院内処方等情報という。",
+      "englishTerm": "Pre-finalized In-Hospital Prescription Information",
+      "relatedTerms": [
+        "院内処方等情報",
+        "重複投薬等チェック"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "確定前処方箋情報",
+      "reading": "かくていまえしょほうせんじょうほう",
+      "definition": "重複投薬等チェックを行う前など、処方内容が確定する前の処方箋を指す。なお、重複投薬等チェック結果を踏まえて確定した処方箋の内容を「処方箋情報」という。",
+      "englishTerm": "Pre-finalized Prescription Information",
+      "relatedTerms": [
+        "処方箋情報",
+        "重複投薬等チェック"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "確定前調剤結果情報",
+      "reading": "かくていまえちょうざいけっかじょうほう",
+      "definition": "重複投薬等チェックを行う前など、確定する前の調剤結果情報を指す。なお、重複投薬等チェック結果を踏まえて確定した処方箋の内容を「処方箋情報」という。",
+      "englishTerm": "Pre-finalized Dispensing Result Information",
+      "relatedTerms": [
+        "調剤結果情報",
+        "重複投薬等チェック"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "ガバメントクラウド",
+      "reading": "がばめんとくらうど",
+      "definition": "政府が提供するクラウドサービス基盤。電子カルテ標準仕様書において、ガバメントクラウド対象クラウドサービスを利用している場合、セキュリティ認証やアーキテクチャ要件の一部が充足されたものとみなされる。",
+      "englishTerm": "Government Cloud",
+      "relatedTerms": [
+        "電子カルテ",
+        "ISMAP"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "紙の処方箋",
+      "reading": "かみのしょほうせん",
+      "definition": "電子処方箋に対応する医療機関で患者が紙の処方箋を選択した場合、又は医療機関が電子処方箋に対応していない場合に発行される紙の処方箋。",
+      "englishTerm": "Paper Prescription",
+      "relatedTerms": [
+        "電子処方箋ファイル",
+        "処方箋情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "キャプション",
+      "reading": "きゃぷしょん",
+      "definition": "映像コンテンツに付与される字幕。会話の内容や重要な効果音などが伝わるように提供する。",
+      "englishTerm": "Caption",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "共通算定モジュール",
+      "reading": "きょうつうさんていもじゅーる",
+      "definition": "診療報酬改定DXの一環として提供される、診療報酬の算定ロジックを共通化したモジュール。電子カルテとレセプトコンピュータの連携において、共通算定モジュール外部インタフェース利用ガイドに準拠した接続が推奨される。",
+      "englishTerm": "Common Calculation Module",
+      "relatedTerms": [
+        "レセプトコンピュータ",
+        "電子カルテ",
+        "診療報酬改定DX"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "クライアントアダプタサービス",
+      "reading": "くらいあんとあだぷたさーびす",
+      "definition": "一般財団法人医療情報システム開発センター（MEDIS）が管理する鍵管理サービスのセカンド電子証明書を利用したカードレス署名を行うにあたり、認証及びアクセストークンの取得・管理等の機能を担うライブラリ。電子カルテシステムや薬局システムに組み込むことができる。",
+      "englishTerm": "Client Adapter Service",
+      "relatedTerms": [
+        "カードレス署名",
+        "鍵管理サービス",
+        "セカンド電子証明書"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "検証機関証明用電子証明書",
+      "reading": "けんしょうきかんしょうめいようでんししょうめいしょ",
+      "definition": "PIN無し認証を行うための検証機関（支払基金・国保中央会）である証明用の電子証明書。",
+      "englishTerm": "Verification Authority Electronic Certificate",
+      "relatedTerms": [
+        "PIN無し認証",
+        "支払基金",
+        "国保中央会"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "限度額適用認定証等",
+      "reading": "げんどがくてきようにんていしょうとう",
+      "definition": "以下の証の総称。(1)限度額適用認定証、(2)限度額適用・標準負担額減額認定証、(3)標準負担額減額認定証、(4)特定疾病療養受療証。高額療養費制度等に関連する認定証。",
+      "englishTerm": "Certificate of Applicable Limit Amount",
+      "relatedTerms": [
+        "オンライン資格確認等システム",
+        "資格情報"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "後期広域連合",
+      "reading": "こうきこういきれんごう",
+      "definition": "後期高齢者医療広域連合を指す。",
+      "englishTerm": "Late-Stage Elderly Healthcare Federation",
+      "relatedTerms": [
+        "医療保険者等"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "公費負担者番号",
+      "reading": "こうひふたんしゃばんごう",
+      "definition": "福祉事務所等の公費負担医療の実施機関単位で付番される8桁の番号。生活保護受給者については、公費負担者番号・受給者番号に紐づける形で電子処方箋ファイルや調剤情報提供ファイル等を発行し、電子処方箋管理サービスで管理を行う。",
+      "englishTerm": "Public Expense Bearer Number",
+      "relatedTerms": [
+        "受給者番号"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "合理的配慮",
+      "reading": "ごうりてきはいりょ",
+      "definition": "2024年4月1日から改正障害者差別解消法の施行により、事業者に義務化された障害者への配慮。ウェブアクセシビリティへの取り組みは、合理的配慮を提供するための環境の整備として努力義務が課せられている。",
+      "englishTerm": "Reasonable Accommodation",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "国保中央会",
+      "reading": "こくほちゅうおうかい",
+      "definition": "「公益社団法人国民健康保険中央会」の略称。支払基金とオンライン資格確認等システム、電子処方箋管理サービスの運用主体となる団体。",
+      "englishTerm": "National Health Insurance Central Association",
+      "relatedTerms": [
+        "支払基金",
+        "オンライン資格確認等システム",
+        "電子処方箋管理サービス"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "個人単位被保険者番号",
+      "reading": "こじんたんいひほけんしゃばんごう",
+      "definition": "医療保険制度において、保険者内で個人を一意に識別する番号。被保険者資格に係る記号・番号（世帯単位）に2桁の枝番がついた番号。",
+      "englishTerm": "Individual Insured Person Number",
+      "relatedTerms": [
+        "枝番",
+        "資格情報",
+        "医療保険者等"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "コントラスト比",
+      "reading": "こんとらすとひ",
+      "definition": "文字色と背景色の間の明暗の差の比率。テキストの場合4.5:1以上（大きいテキストは3:1以上）のコントラスト比が必要。",
+      "englishTerm": "Contrast Ratio",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "SaaS",
+      "reading": "さーす",
+      "definition": "Software as a Service。クラウド上で稼働するソフトウェアをサービスとして提供する形態。電子カルテ標準仕様書では、クラウド上で稼働する全てのアプリケーションがSaaS型であることが求められる。",
+      "englishTerm": "SaaS (Software as a Service)",
+      "relatedTerms": [
+        "電子カルテ",
+        "マルチテナント",
+        "ガバメントクラウド"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "J-LIS",
+      "reading": "じぇいりす",
+      "definition": "地方公共団体情報システム機構の略称。住民基本台帳法の指定情報処理機関として、住基ネットを運営する他、電子署名等に係る地方公共団体情報システム機構の認証業務に関する法律に基づき、公的個人認証サービス（署名用認証局、利用者証明用認証局）による認証事務を実施する機関。",
+      "englishTerm": "J-LIS (Japan Agency for Local Authority Information Systems)",
+      "relatedTerms": [
+        "シリアル番号",
+        "利用者証明用電子証明書"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "資格確認書",
+      "reading": "しかくかくにんしょ",
+      "definition": "マイナンバーカードを保持しない被保険者・被扶養者が資格確認に使用する書類。レセプトコンピュータにて照会情報（保険者番号、被保険者資格に係る記号・番号、枝番、生年月日）を入力して照会を行う。",
+      "englishTerm": "Qualification Verification Document",
+      "relatedTerms": [
+        "マイナンバーカード",
+        "オンライン資格確認等システム",
+        "個人単位被保険者番号"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "資格確認端末",
+      "reading": "しかくかくにんたんまつ",
+      "definition": "オンライン請求ネットワークに接続し、オンライン資格確認等を行うための専用端末。",
+      "englishTerm": "Qualification Verification Terminal",
+      "relatedTerms": [
+        "オンライン資格確認等システム",
+        "オンライン資格確認等連携ソフト"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "資格情報",
+      "reading": "しかくじょうほう",
+      "definition": "加入者情報のうち、当該加入者の加入資格、受給資格に関する項目（保険者番号、個人単位被保険者番号、資格取得日、資格喪失日等）。",
+      "englishTerm": "Qualification Information",
+      "relatedTerms": [
+        "個人単位被保険者番号",
+        "オンライン資格確認等システム"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "JIS X 8341-3:2016",
+      "reading": "じすえっくす8341の3 2016",
+      "definition": "正式名称「高齢者・障害者等配慮設計指針－情報通信における機器，ソフトウェア及びサービス－第3部：ウェブコンテンツ」。WCAG 2.0と同一内容のJIS規格。",
+      "englishTerm": null,
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "システムベンダ",
+      "reading": "しすてむべんだ",
+      "definition": "医療機関・薬局のシステム（レセプトコンピュータ／医事会計システム、電子カルテシステム、薬局システム、調剤システム）のベンダを指す。",
+      "englishTerm": "System Vendor",
+      "relatedTerms": [
+        "電子カルテ",
+        "レセプトコンピュータ",
+        "薬局システム"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "支払基金",
+      "reading": "しはらいききん",
+      "definition": "「社会保険診療報酬支払基金」の略称。国保中央会とオンライン資格確認等システム、電子処方箋管理サービスの運用主体となる団体。",
+      "englishTerm": "Social Insurance Medical Fee Payment Fund",
+      "relatedTerms": [
+        "国保中央会",
+        "オンライン資格確認等システム",
+        "電子処方箋管理サービス"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "受給者番号",
+      "reading": "じゅきゅうしゃばんごう",
+      "definition": "被保護者に個人単位で付番される7桁の番号。1つの公費負担者番号の中で一意になる番号として管理される。",
+      "englishTerm": "Recipient Number",
+      "relatedTerms": [
+        "公費負担者番号"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "主治医意見書",
+      "reading": "しゅじいいけんしょ",
+      "definition": "要介護・要支援認定を行う際に用いられる書類で、医師が医学的な意見を記載する。",
+      "englishTerm": "Attending Physician's Opinion Letter",
+      "relatedTerms": [],
+      "source": "主治医意見書電送サービス技術解説書"
+    },
+    {
+      "term": "主治医意見書／請求書電送サービス",
+      "reading": "しゅじいいけんしょ／せいきゅうしょでんそうさーびす",
+      "definition": "主治医意見書および請求書を電子的に送信するためのサービス。電子カルテ標準仕様書では、対応する技術解説書に記載された機能を有することが推奨される。",
+      "englishTerm": "Attending Physician Opinion/Invoice Electronic Transmission Service",
+      "relatedTerms": [
+        "電子カルテ",
+        "医療DX"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "主治医意見書情報ファイル",
+      "reading": "しゅじいいけんしょじょうほうふぁいる",
+      "definition": "医療機関が作成し、本サービスに登録するファイル。PMH情報要求（XML）形式で、内部に主治医意見書情報（CSV）をBase64エンコードして格納。",
+      "englishTerm": "Attending Physician's Opinion Letter Information File",
+      "relatedTerms": [],
+      "source": "主治医意見書電送サービス技術解説書"
+    },
+    {
+      "term": "主治医意見書請求書",
+      "reading": "しゅじいいけんしょせいきゅうしょ",
+      "definition": "主治医意見書の作成に係る費用の請求額を記載した書類。",
+      "englishTerm": "Attending Physician's Opinion Letter Invoice",
+      "relatedTerms": [],
+      "source": "主治医意見書電送サービス技術解説書"
+    },
+    {
+      "term": "主治医意見書請求書情報ファイル",
+      "reading": "しゅじいいけんしょせいきゅうしょじょうほうふぁいる",
+      "definition": "医療機関が作成し、本サービスに登録するファイル。PMH情報要求（XML）形式で、内部に意見書請求書情報（CSV）をBase64エンコードして格納。",
+      "englishTerm": "Attending Physician's Opinion Letter Invoice Information File",
+      "relatedTerms": [],
+      "source": "主治医意見書電送サービス技術解説書"
+    },
+    {
+      "term": "主治医意見書等作成ソフト",
+      "reading": "しゅじいいけんしょとうさくせいそふと",
+      "definition": "主治医意見書等の作成を支援するアプリケーション。システムベンダが提供。",
+      "englishTerm": "Attending Physician's Opinion Letter Creation Software",
+      "relatedTerms": [],
+      "source": "主治医意見書電送サービス技術解説書"
+    },
+    {
+      "term": "準拠",
+      "reading": "じゅんきょ",
+      "definition": "JIS X 8341-3:2016の対応度表記で、試験を行って達成基準すべてを満たしている場合に使える表記。公開するときは試験結果を合わせて公開する。",
+      "englishTerm": "Compliance",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "照会番号",
+      "reading": "しょうかいばんごう",
+      "definition": "医療機関・薬局のレセプトコンピュータ等で管理されている、患者を特定する任意の番号。",
+      "englishTerm": "Inquiry Number",
+      "relatedTerms": [
+        "レセプトコンピュータ",
+        "オンライン資格確認等システム"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "情報アクセシビリティ",
+      "reading": "じょうほうあくせしびりてぃ",
+      "definition": "障害者基本法等の法律や行政機関・公共機関等の情報発信で使われる用語。ウェブサイトの利用のしやすさを示す言葉として「ウェブアクセシビリティ」と言ったりもする。",
+      "englishTerm": "Information Accessibility",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "処方・調剤情報",
+      "reading": "しょほう・ちょうざいじょうほう",
+      "definition": "電子処方箋管理サービスに保存される電子処方箋ファイル、処方箋情報提供ファイル、調剤情報提供ファイル、院内処方等情報提供ファイルから、医療機関・薬局、患者からの参照等を目的として抽出された薬剤情報等の総称。",
+      "englishTerm": "Prescription and Dispensing Information",
+      "relatedTerms": [
+        "電子処方箋ファイル",
+        "調剤情報提供ファイル",
+        "院内処方等情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "処方情報",
+      "reading": "しょほうじょうほう",
+      "definition": "電子処方箋管理サービス上で管理される電子処方箋ファイル、処方箋情報提供ファイルの総称。",
+      "englishTerm": "Prescription Information",
+      "relatedTerms": [
+        "電子処方箋ファイル",
+        "処方箋情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "処方箋ID",
+      "reading": "しょほうせんあいでぃー",
+      "definition": "電子処方箋ファイル（又は処方箋情報提供ファイル）を電子処方箋管理サービスに登録し、引換番号とともに発行される。電子処方箋管理サービス内の電子処方箋ファイル等を管理するため、一意に採番される。",
+      "englishTerm": "Prescription ID",
+      "relatedTerms": [
+        "引換番号",
+        "電子処方箋ファイル",
+        "処方箋情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "処方箋参考情報",
+      "reading": "しょほうせんさんこうじょうほう",
+      "definition": "処方内容（控え）のPDFデータ。",
+      "englishTerm": "Prescription Reference Information",
+      "relatedTerms": [
+        "処方内容（控え）"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "処方箋情報",
+      "reading": "しょほうせんじょうほう",
+      "definition": "医師法施行規則第21条に規定する処方箋の記載事項を、電子カルテシステム上、一定のファイル形式で電子的に作成し、保存されたもの。",
+      "englishTerm": "Prescription Data",
+      "relatedTerms": [
+        "確定前処方箋情報",
+        "処方箋情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "処方箋情報提供ファイル",
+      "reading": "しょほうせんじょうほうていきょうふぁいる",
+      "definition": "患者が紙の処方箋を選択した場合に、医療機関が処方箋情報を作成し、電子処方箋管理サービスに登録するファイルを指す。紙の処方箋が原本となるため、本ファイルには医師の電子署名が付与されない。",
+      "englishTerm": "Prescription Information Provision File",
+      "relatedTerms": [
+        "紙の処方箋",
+        "電子処方箋ファイル",
+        "処方箋ID"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "処方等年月日",
+      "reading": "しょほうとうねんがっぴ",
+      "definition": "院内処方において、処方、調剤、投薬等を実施した日を指す。",
+      "englishTerm": "Prescription Date",
+      "relatedTerms": [
+        "院内処方等情報"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "処方内容",
+      "reading": "しょほうないよう",
+      "definition": "電子カルテシステム等で作成する処方箋情報に記録する内容。",
+      "englishTerm": "Prescription Content",
+      "relatedTerms": [
+        "処方箋情報",
+        "処方内容（控え）"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "処方内容（控え）",
+      "reading": "しょほうないよう（ひかえ）",
+      "definition": "処方箋参考情報を紙に印刷したもの。",
+      "englishTerm": "Prescription Content (Copy)",
+      "relatedTerms": [
+        "処方箋参考情報",
+        "処方内容"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "署名検証",
+      "reading": "しょめいけんしょう",
+      "definition": "証明書の有効期限と証明書失効リストの確認し、電子署名の有効性を確認すること、及び電子署名が付与されたデータの改ざん検知を行うこと。",
+      "englishTerm": "Signature Verification",
+      "relatedTerms": [
+        "電子署名",
+        "ローカル署名",
+        "カードレス署名"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "署名モジュール",
+      "reading": "しょめいもじゅーる",
+      "definition": "ローカル署名/カードレス署名に関わらず、電子署名の機能を実現するためのプログラム群をまとめて部品化したもの。電子カルテシステムや薬局システムに組み込むことができる。",
+      "englishTerm": "Signature Module",
+      "relatedTerms": [
+        "電子署名",
+        "ローカル署名",
+        "カードレス署名"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "シリアル番号",
+      "reading": "しりあるばんごう",
+      "definition": "J-LISの認証局が各電子証明書を発行する際に一意に識別するために採番した番号。オンライン資格確認等システムにおいて「シリアル番号」と表記する場合は利用者証明用電子証明書のシリアル番号を指す。",
+      "englishTerm": "Serial Number",
+      "relatedTerms": [
+        "J-LIS",
+        "利用者証明用電子証明書"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "審査支払機関",
+      "reading": "しんさしはらいきかん",
+      "definition": "診療報酬の「審査」及び「支払」について、医療保険者等の委託を受けて実施する機関。社会保険診療報酬支払基金と47の国民健康保険団体連合会の総称。",
+      "englishTerm": "Review and Payment Organization",
+      "relatedTerms": [
+        "支払基金",
+        "レセプト"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "診療報酬改定DX",
+      "reading": "しんりょうほうしゅうかいていでぃーえっくす",
+      "definition": "診療報酬改定に伴うシステム改修の負担軽減を目的としたデジタルトランスフォーメーション施策。共通算定モジュールの提供等を通じて、ベンダの改修工数削減と医療機関の負担軽減を図る。",
+      "englishTerm": "Medical Fee Revision DX",
+      "relatedTerms": [
+        "共通算定モジュール",
+        "医療DX",
+        "レセプトコンピュータ"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "スクリーンリーダー",
+      "reading": "すくりーんりーだー",
+      "definition": "画面読み上げソフト。画面上のテキスト情報を合成音声で読み上げるソフトウェア。主なものにNVDA、PC-Talker、JAWS（Windows）、VoiceOver（Mac/iOS）、TalkBack（Android）がある。",
+      "englishTerm": "Screen Reader",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "スマートフォンのマイナンバーカード",
+      "reading": "すまーとふぉんのまいなんばーかーど",
+      "definition": "「Androidスマホ用電子証明書搭載サービス」及び「iPhoneのマイナンバーカード」のサービスによって、スマートフォンに追加して利用できるマイナンバーカード。",
+      "englishTerm": "Smartphone My Number Card",
+      "relatedTerms": [
+        "マイナンバーカード"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "セカンド電子証明書",
+      "reading": "せかんどでんししょうめいしょ",
+      "definition": "支払基金・国保中央会以外の主体が管理する鍵管理サービスに格納される電子証明書。カードレス署名を行う場合に本電子証明書を用いて電子署名を行う。",
+      "englishTerm": "Second Electronic Certificate",
+      "relatedTerms": [
+        "カードレス署名",
+        "鍵管理サービス",
+        "HPKIセカンド電子証明書リモート署名"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "代替テキスト",
+      "reading": "だいたいてきすと",
+      "definition": "写真やイラスト、グラフなど主に画像で提供される情報と「同等の役割を果たすテキスト」のこと。HTMLではimg要素のalt属性で指定する。",
+      "englishTerm": "Alternative Text",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "WCAG",
+      "reading": "だぶりゅーしーえーじー",
+      "definition": "Web Content Accessibility Guidelinesの略称。W3C（World Wide Web Consortium）が作成しているウェブアクセシビリティのガイドライン。",
+      "englishTerm": "Web Content Accessibility Guidelines",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "W3C",
+      "reading": "だぶりゅーすりーしー",
+      "definition": "World Wide Web Consortium。インターネットの各種技術を標準化する国際的な非営利団体。",
+      "englishTerm": "World Wide Web Consortium",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "調剤結果",
+      "reading": "ちょうざいけっか",
+      "definition": "薬剤師が調剤した医薬品の名称、用法、用量等を総称したものを指し、調剤結果情報に含まれる。",
+      "englishTerm": "Dispensing Result",
+      "relatedTerms": [
+        "調剤結果情報",
+        "調剤結果ID"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "調剤結果ID",
+      "reading": "ちょうざいけっかあいでぃー",
+      "definition": "調剤情報提供ファイルを電子処方箋管理サービスに登録し発行される。電子処方箋管理サービス内の調剤情報提供ファイル等を管理するため、一意に採番される。",
+      "englishTerm": "Dispensing Result ID",
+      "relatedTerms": [
+        "調剤結果",
+        "調剤情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "調剤結果情報",
+      "reading": "ちょうざいけっかじょうほう",
+      "definition": "薬局システム上で、当該処方箋に対する調剤内容、医師への疑義照会内容等を一定のファイル形式で電子的に作成し、保存したもの。",
+      "englishTerm": "Dispensing Result Information",
+      "relatedTerms": [
+        "調剤結果",
+        "調剤情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "調剤情報",
+      "reading": "ちょうざいじょうほう",
+      "definition": "電子処方箋管理サービス上で管理される調剤情報提供ファイルの総称。調剤する薬局から処方元の医療機関へのフィードバック情報も含む。",
+      "englishTerm": "Dispensing Information",
+      "relatedTerms": [
+        "調剤情報提供ファイル",
+        "調剤結果"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "調剤情報提供ファイル",
+      "reading": "ちょうざいじょうほうていきょうふぁいる",
+      "definition": "薬局が電子処方箋、又は紙の処方箋を受け付けた場合、薬局が調剤した結果（医薬品名称、用法・用量等）を記録し、電子処方箋管理サービスに登録するファイル。薬剤師の電子署名は任意（ただし電子処方箋を基に調剤をした場合は署名が必要）。",
+      "englishTerm": "Dispensing Information Provision File",
+      "relatedTerms": [
+        "調剤結果",
+        "調剤結果ID",
+        "電子処方箋管理サービス"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "調剤済み処方箋保存サービス",
+      "reading": "ちょうざいずみしょほうせんほぞんさーびす",
+      "definition": "薬局が登録した調剤済み電子処方箋ファイルおよび調剤情報提供ファイルを電子処方箋管理サービスに保管し、任意のタイミングで保管した調剤結果情報を取得することができるサービス。保存開始日以降に保管登録があった調剤済み電子処方箋を調剤年月日から5年保存する。",
+      "englishTerm": "Dispensed Prescription Storage Service",
+      "relatedTerms": [
+        "調剤済み電子処方箋ファイル",
+        "調剤情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "調剤済み電子処方箋ファイル",
+      "reading": "ちょうざいずみでんししょほうせんふぁいる",
+      "definition": "薬局が作成する調剤情報提供ファイルに調剤した結果（医薬品名称、用法・用量等）や薬剤師法第26条に定められる事項が記録されている場合において、電子処方箋管理サービスで署名検証を行い、タイムスタンプが付与されたファイル。",
+      "englishTerm": "Dispensed Electronic Prescription File",
+      "relatedTerms": [
+        "調剤済み処方箋保存サービス",
+        "電子処方箋ファイル",
+        "署名検証"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "重複投薬等チェック",
+      "reading": "ちょうふくとうやくとうちぇっく",
+      "definition": "電子処方箋管理サービスに実装され、過去一定期間内に処方・調剤された薬剤の成分情報と、新たに処方される薬剤の成分情報を突合し、同一投与経路同一成分の重複及び併用禁忌がないか確認すること。",
+      "englishTerm": "Duplicate Medication Check",
+      "relatedTerms": [
+        "確定前処方箋情報",
+        "確定前調剤結果情報",
+        "電子処方箋管理サービス"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "適合レベル",
+      "reading": "てきごうれべる",
+      "definition": "JIS X 8341-3:2016で定義されている適合レベル「A, AA, AAA」のどのレベルに適合するかを示す。",
+      "englishTerm": "Conformance Level",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "電子カルテ",
+      "reading": "でんしかるて",
+      "definition": "診療録（カルテ）を電子的に記録・管理するシステム。標準仕様書では、クラウドネイティブなSaaS型マルチテナント方式のアーキテクチャが要求され、オンライン資格確認等システム、電子処方箋管理サービス、電子カルテ情報共有サービス等との接続機能を有することが求められる。",
+      "englishTerm": "Electronic Medical Record (EMR)",
+      "relatedTerms": [
+        "レセプトコンピュータ",
+        "電子処方箋管理サービス",
+        "オンライン資格確認等システム",
+        "電子カルテ情報共有サービス"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "電子カルテ情報共有サービス",
+      "reading": "でんしかるてじょうほうきょうゆうさーびす",
+      "definition": "医療機関間で電子カルテ情報を共有するためのサービス。電子カルテ情報共有サービス記録条件仕様書及び技術解説書に規定された機能の実装が求められる。患者サマリー登録・閲覧サービスも含む。",
+      "englishTerm": "Electronic Medical Record Information Sharing Service",
+      "relatedTerms": [
+        "電子カルテ",
+        "医療DX"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "電子処方箋",
+      "reading": "でんししょほうせん",
+      "definition": "処方箋情報を電子的に作成・管理・交付する仕組み。医師が電子カルテシステムで処方内容を作成し、電子署名を付与した上で電子処方箋管理サービスに登録する。令和5年1月26日より院外処方箋を対象に運用開始し、令和7年1月より院内処方も対象。",
+      "englishTerm": "Electronic Prescription",
+      "relatedTerms": [
+        "電子処方箋ファイル",
+        "電子処方箋管理サービス",
+        "処方箋ID",
+        "引換番号"
+      ],
+      "source": "電子処方箋技術解説書 / 電子カルテ標準仕様書"
+    },
+    {
+      "term": "電子処方箋管理サービス",
+      "reading": "でんししょほうせんかんりさーびす",
+      "definition": "支払基金・国保中央会が運用する、電子処方箋ファイルや調剤情報提供ファイル等の登録・管理・提供を行うサービス。オンライン資格確認等システムの一部機能を活用し、セキュアなネットワーク基盤上で運用される。",
+      "englishTerm": "Electronic Prescription Management Service",
+      "relatedTerms": [
+        "電子処方箋",
+        "支払基金",
+        "国保中央会",
+        "重複投薬等チェック"
+      ],
+      "source": "電子処方箋技術解説書 / 電子カルテ標準仕様書"
+    },
+    {
+      "term": "電子処方箋CDA記述仕様",
+      "reading": "でんししょほうせんしーでぃーえーきじゅつしよう",
+      "definition": "厚生労働省が、「電子処方箋の運用ガイドライン」に基づき実施される処方箋の電子的な運用において用いられる処方箋情報及び調剤結果情報に関する文書の記述仕様を定める文書。",
+      "englishTerm": "Electronic Prescription CDA Description Specification",
+      "relatedTerms": [
+        "電子処方箋",
+        "処方箋情報",
+        "調剤結果情報"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "電子処方箋ファイル",
+      "reading": "でんししょほうせんふぁいる",
+      "definition": "患者が電子処方箋を選択した場合に、医療機関が処方箋情報を作成し、電子処方箋管理サービスに登録するファイル。電子カルテシステムで作成した処方箋情報に対し、医師の電子署名が付与される。XML形式。",
+      "englishTerm": "Electronic Prescription File",
+      "relatedTerms": [
+        "処方箋情報提供ファイル",
+        "電子署名",
+        "処方箋ID"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "電子署名",
+      "reading": "でんししょめい",
+      "definition": "電子文書の作成者の本人性と文書の非改ざん性を証明するための技術的手段。電子処方箋においては、医師・薬剤師がローカル署名またはカードレス署名の方法で電子署名を付与する。",
+      "englishTerm": "Electronic Signature / Digital Signature",
+      "relatedTerms": [
+        "ローカル署名",
+        "カードレス署名",
+        "署名検証",
+        "署名モジュール",
+        "HPKIカード"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "特定健診情報閲覧システム",
+      "reading": "とくていけんしんじょうほうえつらんしすてむ",
+      "definition": "医療保険者等からの特定健診情報の報告をもとに、特定健診情報を管理する機能を持つシステム。加入者の同意がある場合、医療機関・薬局にて特定健診情報を閲覧できる。後期広域連合の健康診査も対象。オンライン資格確認等システムのサブシステムの一つ。",
+      "englishTerm": "Specific Health Checkup Information Viewing System",
+      "relatedTerms": [
+        "オンライン資格確認等システム",
+        "薬剤情報閲覧システム"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "配慮",
+      "reading": "はいりょ",
+      "definition": "JIS X 8341-3:2016の対応度表記で、試験の実施と公開の有無は問わない表記。",
+      "englishTerm": "Consideration",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "汎用カードリーダー",
+      "reading": "はんようかーどりーだー",
+      "definition": "公的個人認証サービスに対応したICカードリーダー。目視で顔確認を行う場合に使用。PIN認証を行う場合、テンキー等を附属させ、暗証番号入力に対応する必要がある。",
+      "englishTerm": "General-Purpose Card Reader",
+      "relatedTerms": [
+        "顔認証付きカードリーダー",
+        "マイナンバーカード"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "PMH",
+      "reading": "ぴーえむえいち",
+      "definition": "Public Medical Hubの略称。オンライン資格確認等システムの一部として機能するハブシステム。",
+      "englishTerm": "Public Medical Hub",
+      "relatedTerms": [],
+      "source": "主治医意見書電送サービス技術解説書"
+    },
+    {
+      "term": "非干渉",
+      "reading": "ひかんしょう",
+      "definition": "JIS X 8341-3:2016の中で、必ず達成しなければいけない達成基準は「利用者がウェブページの他の部分へアクセスすることを妨げていない」状態であること。非干渉の達成基準に適合できていない場合は、適合できていないコンテンツや実装方法が他の部分へのアクセスを妨げている状態になっている。",
+      "englishTerm": "Non-interference",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "引換番号",
+      "reading": "ひきかえばんごう",
+      "definition": "患者が被保険者資格に係る記号番号等と一緒に薬局に提示することによって、薬局が電子処方箋管理サービス上の調剤対象の処方箋を取得することができるコード。電子処方箋管理サービスが発行する。",
+      "englishTerm": "Exchange Number",
+      "relatedTerms": [
+        "処方箋ID",
+        "電子処方箋管理サービス"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "PIN",
+      "reading": "ぴん",
+      "definition": "「Personal Identification Number」個人を識別する番号（暗証番号）。マイナンバーカードの利用者証明用電子証明書を利用するにあたり4桁の暗証番号が必要。",
+      "englishTerm": "PIN (Personal Identification Number)",
+      "relatedTerms": [
+        "PIN認証",
+        "PIN無し認証",
+        "マイナンバーカード"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "PIN無し認証",
+      "reading": "ぴんなしにんしょう",
+      "definition": "暗証番号入力を求めない認証。マイナンバーカードでのオンライン資格確認等では、暗証番号を入力しないでカードをかざすだけで利用者証明用電子証明書の読み取りを行う方式。顔認証付きカードリーダーによる顔認証または窓口での目視確認が必要。",
+      "englishTerm": "PIN-less Authentication",
+      "relatedTerms": [
+        "PIN",
+        "PIN認証",
+        "顔認証付きカードリーダー",
+        "マイナンバーカード"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "PIN認証",
+      "reading": "ぴんにんしょう",
+      "definition": "暗証番号入力を求める認証。利用者証明用電子証明書を利用するに当たり4桁の暗証番号が必要。",
+      "englishTerm": "PIN Authentication",
+      "relatedTerms": [
+        "PIN",
+        "PIN無し認証",
+        "マイナンバーカード"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "FIDO認証",
+      "reading": "ふぁいどにんしょう",
+      "definition": "従来のパスワード入力ではなく、公開鍵暗号方式の仕組みを活用した本人認証の方法。スマートフォンでの生体認証等と組み合わせて認証を行う。カードレス署名における本人認証方法の一つ。",
+      "englishTerm": "FIDO Authentication",
+      "relatedTerms": [
+        "カードレス署名",
+        "アクセストークン"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "フォーカスインジケーター",
+      "reading": "ふぉーかすいんじけーたー",
+      "definition": "キーボード操作時に、選択中の要素を枠線等で囲んで示すこと。",
+      "englishTerm": "Focus Indicator",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "本人認証用カードリーダソフト",
+      "reading": "ほんにんにんしょうようかーどりーだそふと",
+      "definition": "顔認証付きカードリーダー製造ベンダが提供する、カードリーダーを利用した本人認証（マイナンバーカードの写真を利用した顔認証や暗証番号入力による本人認証）等を行うためのアプリケーションソフト。",
+      "englishTerm": "Identity Verification Card Reader Software",
+      "relatedTerms": [
+        "顔認証付きカードリーダー",
+        "マイナンバーカード処理ソフト"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "マイナンバーカード",
+      "reading": "まいなんばーかーど",
+      "definition": "氏名、住所、生年月日、個人番号、その者の写真、その他その者を識別する事項のうち政令で定める事項が記載されたカード。ICチップにJPKI認証局が発行する署名用電子証明書と利用者証明用電子証明書が格納される。スマートフォンのマイナンバーカードを含むサービスとしての総称を指す場合もある。プラスチック製のマイナンバーカードのみを指す場合は「実物のマイナンバーカード」と表記する。",
+      "englishTerm": "My Number Card (Individual Number Card)",
+      "relatedTerms": [
+        "利用者証明用電子証明書",
+        "顔認証付きカードリーダー",
+        "PIN無し認証",
+        "スマートフォンのマイナンバーカード"
+      ],
+      "source": "電子処方箋技術解説書 / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "マイナンバーカード処理ソフト",
+      "reading": "まいなんばーかーどしょりそふと",
+      "definition": "支払基金が提供する、PIN無し認証等を行うマイナンバーカードを利用した資格確認や健康保険証利用の申込（初回登録）を行うためのアプリケーションソフト。",
+      "englishTerm": "My Number Card Processing Software",
+      "relatedTerms": [
+        "マイナンバーカード",
+        "支払基金",
+        "PIN無し認証"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "マルチテナント",
+      "reading": "まるちてなんと",
+      "definition": "一つのソフトウェアインスタンスで複数の利用者（テナント）にサービスを提供するアーキテクチャ方式。電子カルテ標準仕様書では、マルチテナント方式が必須要件とされている。",
+      "englishTerm": "Multi-tenant",
+      "relatedTerms": [
+        "SaaS",
+        "電子カルテ",
+        "ガバメントクラウド"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け）"
+    },
+    {
+      "term": "MEDIS",
+      "reading": "めでぃす",
+      "definition": "一般財団法人医療情報システム開発センター（Medical Information System Development Center）。鍵管理サービスやリモート署名サーバサービスを管理し、HPKIセカンド電子証明書リモート署名ライブラリやクライアントアダプタサービスを提供する。",
+      "englishTerm": "MEDIS (Medical Information System Development Center)",
+      "relatedTerms": [
+        "鍵管理サービス",
+        "リモート署名サーバサービス",
+        "クライアントアダプタサービス",
+        "カードレス署名"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "薬剤情報閲覧システム",
+      "reading": "やくざいじょうほうえつらんしすてむ",
+      "definition": "レセプトをもとに薬剤情報を管理する機能を持つシステム。加入者の同意がある場合、医療機関・薬局にて薬剤情報を閲覧できる。オンライン資格確認等システムのサブシステムの一つ。",
+      "englishTerm": "Medication Information Viewing System",
+      "relatedTerms": [
+        "オンライン資格確認等システム",
+        "特定健診情報閲覧システム"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "薬局システム",
+      "reading": "やっきょくしすてむ",
+      "definition": "薬局において、処方箋受付や調剤等の業務で使用するシステムの総称。薬局によって、レセプトコンピュータや薬歴システム、両者一体型のシステム等の使用する端末が異なるため、総称を用いる。",
+      "englishTerm": "Pharmacy System",
+      "relatedTerms": [
+        "レセプトコンピュータ",
+        "調剤情報提供ファイル"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "ユーザビリティ",
+      "reading": "ゆーざびりてぃ",
+      "definition": "「特定のユーザーが特定の利用状況において、システム、製品又はサービスを利用する際に、効果、効率及び満足を伴って特定の目標を達成する度合い」（ISO 9241-11）。",
+      "englishTerm": "Usability",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "用法マスタ",
+      "reading": "ようほうますた",
+      "definition": "医療機関・薬局が、統一されたコードを利用して電子処方箋管理サービスに電子処方箋ファイル等を登録するため、電子処方箋管理サービスから医療機関・薬局に配布する用法マスタ。",
+      "englishTerm": "Dosage Master",
+      "relatedTerms": [
+        "医薬品マスタ",
+        "電子処方箋管理サービス"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "リモート署名サーバサービス",
+      "reading": "りもーとしょめいさーばさーびす",
+      "definition": "一般財団法人医療情報システム開発センター（MEDIS）が管理する鍵管理サービスのセカンド電子証明書を利用したカードレス署名を行うにあたり、電子カルテシステムや薬局システムから直接接続する先のシステム。",
+      "englishTerm": "Remote Signature Server Service",
+      "relatedTerms": [
+        "カードレス署名",
+        "鍵管理サービス",
+        "セカンド電子証明書"
+      ],
+      "source": "電子処方箋技術解説書"
+    },
+    {
+      "term": "利用者証明用電子証明書",
+      "reading": "りようしゃしょうめいようでんししょうめいしょ",
+      "definition": "インターネットを閲覧する際などに、利用者本人であることを証明するための電子証明書。マイナポータルのログイン等、本人であることの認証手段として利用するもの。マイナンバーカードのICチップに格納される。",
+      "englishTerm": "User Authentication Electronic Certificate",
+      "relatedTerms": [
+        "マイナンバーカード",
+        "PIN無し認証",
+        "シリアル番号"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "レスポンシブデザイン",
+      "reading": "れすぽんしぶでざいん",
+      "definition": "同じページをパソコンとスマートフォン両方で閲覧・操作できるようにするデザイン手法。",
+      "englishTerm": "Responsive Design",
+      "relatedTerms": [],
+      "source": "ウェブアクセシビリティ導入ガイドブック"
+    },
+    {
+      "term": "レセプト",
+      "reading": "れせぷと",
+      "definition": "診療報酬明細書。医療機関・薬局が保険者に対して診療報酬を請求するために作成する明細書。レセプト振替システムにより、資格情報の有効性を確認し請求先の振替・分割が行われる。",
+      "englishTerm": "Receipt (Medical Fee Statement)",
+      "relatedTerms": [
+        "レセプトコンピュータ",
+        "審査支払機関",
+        "レセプト振替システム"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "レセプトコンピュータ",
+      "reading": "れせぷとこんぴゅーた",
+      "definition": "診療報酬明細書（レセプト）の作成・管理を行うコンピュータシステム。医療機関・薬局における会計処理やオンライン請求等に使用される。標準仕様書では、共通算定モジュールとの連携やクラウド型レセプトコンピュータとの接続機能が求められる。",
+      "englishTerm": "Receipt Computer (ORCA/Medical Billing Computer)",
+      "relatedTerms": [
+        "電子カルテ",
+        "共通算定モジュール",
+        "オンライン請求"
+      ],
+      "source": "電子カルテ標準仕様書（診療所向け・病院向け） / オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "レセプト振替システム",
+      "reading": "れせぷとふりかえしすてむ",
+      "definition": "医療機関・薬局から審査支払機関へ提出されたレセプト情報に記載された保険者番号、個人単位被保険者番号、生年月日、算定日等を利用して、審査支払機関にて加入者の資格情報の有効性を確認し、受診日・調剤日時点の資格情報に基づいてレセプト請求先を振替・分割するシステム。",
+      "englishTerm": "Receipt Transfer System",
+      "relatedTerms": [
+        "レセプト",
+        "審査支払機関",
+        "オンライン資格確認等システム"
+      ],
+      "source": "オンライン資格確認等技術解説書"
+    },
+    {
+      "term": "ローカル署名",
+      "reading": "ろーかるしょめい",
+      "definition": "医師・薬剤師が保有するICカード（HPKIカード）のICチップに格納される電子証明書を利用して電子署名を付与する方法。",
+      "englishTerm": "Local Signature",
+      "relatedTerms": [
+        "カードレス署名",
+        "HPKIカード",
+        "電子署名",
+        "署名検証"
+      ],
+      "source": "電子処方箋技術解説書"
+    }
+  ]
+}
