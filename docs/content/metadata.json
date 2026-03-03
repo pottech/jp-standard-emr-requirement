@@ -13,7 +13,8 @@
       "order": 1,
       "children": [
         { "title": "診療所向け", "path": "/emr/clinic", "order": 1 },
-        { "title": "病院向け", "path": "/emr/hospital", "order": 2 }
+        { "title": "病院向け", "path": "/emr/hospital", "order": 2 },
+        { "title": "機能情報公開", "path": "/emr/disclosure", "order": 3 }
       ]
     },
     {

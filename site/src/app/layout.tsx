@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { RouteTracker } from '@/components/analytics/RouteTracker';
 import { getNavigation, getSiteTitle } from '@/lib/navigation';
-
-const GA_ID = 'G-9JTC19NCJR';
+import { GA_ID } from '@/lib/gtag';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -52,6 +53,9 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Suspense fallback={null}>
+          <RouteTracker />
+        </Suspense>
         <div className="flex h-screen overflow-hidden">
           {/* サイドバー */}
           <Sidebar navigation={navigation} siteTitle={siteTitle} />

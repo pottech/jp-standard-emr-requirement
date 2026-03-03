@@ -17,6 +17,7 @@ import {
   BookOpen,
 } from 'lucide-react';
 import type { NavItem } from '@/lib/types';
+import { trackNavClick } from '@/lib/gtag';
 
 interface SidebarProps {
   navigation: NavItem[];
@@ -67,7 +68,10 @@ export function Sidebar({ navigation, siteTitle }: SidebarProps) {
           <Link
             href="/"
             className="block text-lg font-bold text-gray-900"
-            onClick={() => setMobileOpen(false)}
+            onClick={() => {
+              setMobileOpen(false);
+              trackNavClick(siteTitle, 'header');
+            }}
           >
             {siteTitle}
           </Link>
@@ -106,7 +110,10 @@ function SidebarSection({
       <div className="mb-1">
         <Link
           href="/"
-          onClick={onNavigate}
+          onClick={() => {
+            onNavigate();
+            trackNavClick(item.title);
+          }}
           className={`flex items-center gap-2.5 rounded-md px-3 py-2 text-sm transition-colors ${
             isActive
               ? 'bg-indigo-50 font-medium text-indigo-700'
@@ -126,7 +133,10 @@ function SidebarSection({
       {/* セクション見出し */}
       <Link
         href={item.path}
-        onClick={onNavigate}
+        onClick={() => {
+          onNavigate();
+          trackNavClick(item.title);
+        }}
         className={`flex items-center gap-2.5 rounded-md px-3 py-2 text-sm font-semibold transition-colors ${
           isActive
             ? 'bg-indigo-50 text-indigo-700'
@@ -160,7 +170,10 @@ function SidebarSection({
                 <Link
                   key={child.path}
                   href={child.path}
-                  onClick={onNavigate}
+                  onClick={() => {
+                    onNavigate();
+                    trackNavClick(child.title, item.title);
+                  }}
                   className={`block rounded-md px-3 py-1.5 text-[13px] transition-colors ${
                     childActive
                       ? 'bg-indigo-50 font-medium text-indigo-700'

@@ -16,6 +16,7 @@ import {
   LayoutGrid,
   List,
 } from 'lucide-react';
+import { trackTabSwitch, trackViewMode, trackExpand } from '@/lib/gtag';
 
 /* ─── 型定義 ─── */
 interface Requirement {
@@ -229,7 +230,12 @@ function ExpandableRequirement({
     >
       {/* ヘッダー行 */}
       <button
-        onClick={() => hasDetails && setIsOpen(!isOpen)}
+        onClick={() => {
+          if (!hasDetails) return;
+          const next = !isOpen;
+          setIsOpen(next);
+          if (next) trackExpand(row.title, '比較表');
+        }}
         className={`w-full text-left px-4 py-3 flex items-start gap-3 ${
           hasDetails ? 'cursor-pointer hover:bg-gray-50/50' : 'cursor-default'
         }`}
@@ -390,7 +396,11 @@ function CategorySection({
     <div className="mb-8">
       {/* カテゴリヘッダー */}
       <button
-        onClick={() => setIsExpanded(!isExpanded)}
+        onClick={() => {
+          const next = !isExpanded;
+          setIsExpanded(next);
+          if (next) trackExpand(categoryLabels[catKey] ?? catKey, '比較表カテゴリ');
+        }}
         className="w-full text-left flex items-center justify-between py-3 px-1 group"
       >
         <div className="flex items-center gap-3">
@@ -662,7 +672,10 @@ export function ComparisonPage({ clinicEmr, hospitalEmr, clinicRececom, hospital
             return (
               <button
                 key={key}
-                onClick={() => setActiveTab(key)}
+                onClick={() => {
+                  setActiveTab(key);
+                  trackTabSwitch(spec.label, '比較表');
+                }}
                 className={`flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition-all ${
                   isActive
                     ? 'bg-white text-gray-900 shadow-sm'
@@ -677,7 +690,10 @@ export function ComparisonPage({ clinicEmr, hospitalEmr, clinicRececom, hospital
         </div>
         <div className="flex rounded-lg bg-gray-100 p-0.5">
           <button
-            onClick={() => setViewMode('grid')}
+            onClick={() => {
+              setViewMode('grid');
+              trackViewMode('カード表示', '比較表');
+            }}
             className={`p-2 rounded-md transition-all ${
               viewMode === 'grid'
                 ? 'bg-white text-gray-900 shadow-sm'
@@ -688,7 +704,10 @@ export function ComparisonPage({ clinicEmr, hospitalEmr, clinicRececom, hospital
             <LayoutGrid className="h-4 w-4" />
           </button>
           <button
-            onClick={() => setViewMode('table')}
+            onClick={() => {
+              setViewMode('table');
+              trackViewMode('テーブル表示', '比較表');
+            }}
             className={`p-2 rounded-md transition-all ${
               viewMode === 'table'
                 ? 'bg-white text-gray-900 shadow-sm'
