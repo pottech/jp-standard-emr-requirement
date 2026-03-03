@@ -76,14 +76,19 @@
       ]
     },
     {
+      "title": "適合性チェック",
+      "path": "/compliance-check",
+      "order": 7
+    },
+    {
       "title": "比較表",
       "path": "/comparison",
-      "order": 7
+      "order": 8
     },
     {
       "title": "用語集",
       "path": "/glossary",
-      "order": 8
+      "order": 9
     }
   ],
   "sourceDocuments": [

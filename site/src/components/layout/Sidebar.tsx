@@ -13,6 +13,7 @@ import {
   ShieldCheck,
   Mail,
   Accessibility,
+  ClipboardCheck,
   GitCompareArrows,
   BookOpen,
 } from 'lucide-react';
@@ -32,6 +33,7 @@ const sectionIcons: Record<string, React.ElementType> = {
   '/qualification': ShieldCheck,
   '/opinion-letter': Mail,
   '/accessibility': Accessibility,
+  '/compliance-check': ClipboardCheck,
   '/comparison': GitCompareArrows,
   '/glossary': BookOpen,
 };
