@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { getNavigation, getSiteTitle } from '@/lib/navigation';
+
+const GA_ID = 'G-9JTC19NCJR';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -18,8 +21,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'EMR標準仕様ドキュメント',
-    template: '%s | EMR標準仕様ドキュメント',
+    default: '電子カルテ標準要件ガイド',
+    template: '%s | 電子カルテ標準要件ガイド',
   },
   description: '国が定めた電子カルテ・レセプトコンピュータの標準要件をわかりやすく公開するサイト',
 };
@@ -34,6 +37,20 @@ export default function RootLayout({
 
   return (
     <html lang="ja">
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="flex h-screen overflow-hidden">
           {/* サイドバー */}

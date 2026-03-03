@@ -1,7 +1,29 @@
-import { ContentPage } from '@/components/ContentPage';
+import fs from 'fs';
+import path from 'path';
+import { ComparisonPage } from '@/components/ComparisonPage';
+
+function loadSpec(filename: string) {
+  const raw = fs.readFileSync(
+    path.join(process.cwd(), '..', 'docs', 'data', filename),
+    'utf-8'
+  );
+  return JSON.parse(raw);
+}
 
 export default function Page() {
-  return <ContentPage slug="comparison" currentPath="/comparison" />;
+  const clinicEmr = loadSpec('clinic-emr.json');
+  const hospitalEmr = loadSpec('hospital-emr.json');
+  const clinicRececom = loadSpec('clinic-rececom.json');
+  const hospitalRececom = loadSpec('hospital-rececom.json');
+
+  return (
+    <ComparisonPage
+      clinicEmr={clinicEmr}
+      hospitalEmr={hospitalEmr}
+      clinicRececom={clinicRececom}
+      hospitalRececom={hospitalRececom}
+    />
+  );
 }
 
 export const metadata = {

@@ -3,13 +3,37 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ChevronRight, ChevronDown, Menu, X } from 'lucide-react';
+import {
+  Menu,
+  X,
+  Home,
+  FileText,
+  Calculator,
+  Pill,
+  ShieldCheck,
+  Mail,
+  Accessibility,
+  GitCompareArrows,
+  BookOpen,
+} from 'lucide-react';
 import type { NavItem } from '@/lib/types';
 
 interface SidebarProps {
   navigation: NavItem[];
   siteTitle: string;
 }
+
+const sectionIcons: Record<string, React.ElementType> = {
+  '/': Home,
+  '/emr': FileText,
+  '/rececom': Calculator,
+  '/e-prescription': Pill,
+  '/qualification': ShieldCheck,
+  '/opinion-letter': Mail,
+  '/accessibility': Accessibility,
+  '/comparison': GitCompareArrows,
+  '/glossary': BookOpen,
+};
 
 export function Sidebar({ navigation, siteTitle }: SidebarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -40,16 +64,19 @@ export function Sidebar({ navigation, siteTitle }: SidebarProps) {
         }`}
       >
         <div className="border-b border-gray-200 px-5 py-4">
-          <Link href="/" className="block text-lg font-bold text-gray-900" onClick={() => setMobileOpen(false)}>
+          <Link
+            href="/"
+            className="block text-lg font-bold text-gray-900"
+            onClick={() => setMobileOpen(false)}
+          >
             {siteTitle}
           </Link>
         </div>
-        <nav className="p-3">
+        <nav className="px-3 py-2">
           {navigation.map((item) => (
-            <NavItemComponent
+            <SidebarSection
               key={item.path}
               item={item}
-              depth={0}
               onNavigate={() => setMobileOpen(false)}
             />
           ))}
@@ -59,62 +86,91 @@ export function Sidebar({ navigation, siteTitle }: SidebarProps) {
   );
 }
 
-function NavItemComponent({
+function SidebarSection({
   item,
-  depth,
   onNavigate,
 }: {
   item: NavItem;
-  depth: number;
   onNavigate: () => void;
 }) {
   const pathname = usePathname();
-  const isActive = pathname === item.path;
   const hasChildren = item.children && item.children.length > 0;
-  const isExpanded = pathname.startsWith(item.path) && item.path !== '/';
-  const [open, setOpen] = useState(isExpanded);
+  const isActive = pathname === item.path;
+  const isSectionActive =
+    item.path !== '/' && pathname.startsWith(item.path);
+  const Icon = sectionIcons[item.path];
 
-  const paddingLeft = depth * 12 + 8;
-
-  return (
-    <div>
-      <div className="flex items-center">
-        {hasChildren && (
-          <button
-            onClick={() => setOpen(!open)}
-            className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-gray-400 hover:text-gray-600"
-          >
-            {open ? (
-              <ChevronDown className="h-3.5 w-3.5" />
-            ) : (
-              <ChevronRight className="h-3.5 w-3.5" />
-            )}
-          </button>
-        )}
+  // トップページリンク（子なし・アイコンなし）
+  if (item.path === '/') {
+    return (
+      <div className="mb-1">
         <Link
-          href={item.path}
+          href="/"
           onClick={onNavigate}
-          className={`block flex-1 rounded-md px-3 py-1.5 text-sm transition-colors ${
+          className={`flex items-center gap-2.5 rounded-md px-3 py-2 text-sm transition-colors ${
             isActive
               ? 'bg-indigo-50 font-medium text-indigo-700'
-              : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900'
+              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
           }`}
-          style={{ paddingLeft: hasChildren ? 0 : paddingLeft + 24 }}
         >
-          {item.title}
+          {Icon && <Icon className="h-4 w-4 shrink-0" />}
+          <span>{item.title}</span>
         </Link>
       </div>
+    );
+  }
 
-      {hasChildren && open && (
-        <div className="ml-3">
-          {item.children!.map((child) => (
-            <NavItemComponent
-              key={child.path}
-              item={child}
-              depth={depth + 1}
-              onNavigate={onNavigate}
-            />
-          ))}
+  // セクション（子あり or 子なし）
+  return (
+    <div className="mt-4 first:mt-2">
+      {/* セクション見出し */}
+      <Link
+        href={item.path}
+        onClick={onNavigate}
+        className={`flex items-center gap-2.5 rounded-md px-3 py-2 text-sm font-semibold transition-colors ${
+          isActive
+            ? 'bg-indigo-50 text-indigo-700'
+            : isSectionActive
+              ? 'text-indigo-600'
+              : 'text-gray-800 hover:bg-gray-50'
+        }`}
+      >
+        {Icon && (
+          <Icon
+            className={`h-4 w-4 shrink-0 ${
+              isActive || isSectionActive
+                ? 'text-indigo-500'
+                : 'text-gray-400'
+            }`}
+          />
+        )}
+        <span>{item.title}</span>
+      </Link>
+
+      {/* 子ページ一覧（常に展開） */}
+      {hasChildren && (
+        <div className="ml-4 mt-0.5 border-l border-gray-200 pl-2">
+          {item.children!
+            .filter(
+              (child) => child.path !== item.path // 親と同じパスの「概要」は除外
+            )
+            .map((child) => {
+              const childActive = pathname === child.path;
+              return (
+                <Link
+                  key={child.path}
+                  href={child.path}
+                  onClick={onNavigate}
+                  className={`block rounded-md px-3 py-1.5 text-[13px] transition-colors ${
+                    childActive
+                      ? 'bg-indigo-50 font-medium text-indigo-700'
+                      : 'text-gray-500 hover:bg-gray-50 hover:text-gray-800'
+                  }`}
+                >
+                  {child.title}
+                </Link>
+              );
+            })}
         </div>
       )}
     </div>

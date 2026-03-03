@@ -1,5 +1,5 @@
 {
-  "siteTitle": "EMR標準仕様ドキュメント",
+  "siteTitle": "電子カルテ標準要件ガイド",
   "siteDescription": "国が定めた電子カルテ・レセプトコンピュータの標準要件をわかりやすく公開するサイト",
   "navigation": [
     {
@@ -8,7 +8,7 @@
       "order": 0
     },
     {
-      "title": "電子カルテ",
+      "title": "電子カルテ標準要件",
       "path": "/emr",
       "order": 1,
       "children": [
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "title": "レセプトコンピュータ",
+      "title": "レセコン標準要件",
       "path": "/rececom",
       "order": 2,
       "children": [
