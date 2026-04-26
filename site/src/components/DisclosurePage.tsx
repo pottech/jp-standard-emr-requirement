@@ -72,7 +72,7 @@ const mandatoryDisclosureItems: DisclosureItem[] = [
     hospital: true,
     hospitalOnly: true,
     appendixRef: '別紙様式A',
-    appendixStatus: '検討中',
+    appendixStatus: '次版以降において設定予定',
   },
   {
     id: 'D-M-06',
@@ -83,7 +83,7 @@ const mandatoryDisclosureItems: DisclosureItem[] = [
     hospital: true,
     hospitalOnly: true,
     appendixRef: '別紙C',
-    appendixStatus: '検討中',
+    appendixStatus: '次版以降において設定予定',
   },
   {
     id: 'D-M-07',
@@ -219,7 +219,7 @@ function UnderReviewBadge() {
   return (
     <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-700 ring-1 ring-blue-200">
       <AlertTriangle size={12} />
-      様式検討中
+      様式は次版以降において設定予定
     </span>
   );
 }
@@ -284,7 +284,7 @@ function ExpandableRow({
                   参照別紙: {item.appendixRef}
                 </p>
                 <p className="mt-0.5 text-xs text-blue-700">
-                  ※ 本書（案）の段階では様式が検討中のため、具体的なフォーマットは今後公表予定です。
+                  ※ 様式の詳細は第1章別紙様式1「電子カルテ提示対象機能一覧」を参照してください。
                 </p>
               </div>
             </div>
@@ -463,7 +463,7 @@ export function DisclosurePage() {
                   size={14}
                   className="mt-0.5 shrink-0 text-amber-500"
                 />
-                機能情報公開様式: 別紙様式A（検討中）
+                機能情報公開様式: 別紙様式A（次版以降において設定予定）
               </li>
             </ul>
           </div>
@@ -493,15 +493,14 @@ export function DisclosurePage() {
               </p>
               <p>
                 <strong>別紙の状態:</strong>{' '}
-                本書は案の段階であり、別紙様式Aの具体的なフォーマットは現在検討中です。
-                発出時に追記される予定です。
+                別紙様式Aの具体的なフォーマットは次版以降において設定予定です。
               </p>
             </div>
             <div className="mt-3 rounded-lg bg-amber-100 p-3">
               <p className="text-xs leading-relaxed text-amber-900">
                 <strong>注:</strong>{' '}
-                本文中又は別紙中「【※検討中】」と表記する箇所は、今回の意見募集段階では検討中のためお示ししないが、
-                発出の際に追記予定である。なお、当該部分にも別紙を設定する可能性があるため、意見募集段階においては、
+                本文中又は別紙中「【※次版以降において設定予定】」と表記する箇所は、次版以降において設定予定である。
+                なお、当該部分にも別紙を設定する可能性があるため、
                 別紙番号を仮としてアルファベットで表記する。
               </p>
             </div>
@@ -655,8 +654,8 @@ export function DisclosurePage() {
           </p>
           <p>
             <strong>出典:</strong>{' '}
-            医科診療所向け電子カルテ及びレセプトコンピュータ標準仕様書（基本要件）（案）第1章 2.3 /
-            中小病院向け電子カルテ及びレセプトコンピュータ標準仕様書（基本要件）（案）第1章 2.3
+            医科診療所向け電子カルテ及びレセプトコンピュータ標準仕様書（基本要件）【第1.0版】第1章 2.3 /
+            中小病院向け電子カルテ及びレセプトコンピュータ標準仕様書（基本要件）【第1.0版】第1章 2.3
           </p>
         </div>
       </div>

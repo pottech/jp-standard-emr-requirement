@@ -14,7 +14,10 @@
       "children": [
         { "title": "診療所向け", "path": "/emr/clinic", "order": 1 },
         { "title": "病院向け", "path": "/emr/hospital", "order": 2 },
-        { "title": "機能情報公開", "path": "/emr/disclosure", "order": 3 }
+        { "title": "機能情報公開", "path": "/emr/disclosure", "order": 3 },
+        { "title": "システム連携・API仕様", "path": "/emr/integration", "order": 4 },
+        { "title": "提示対象機能一覧", "path": "/emr/functions", "order": 5 },
+        { "title": "非機能要件 要開示項目", "path": "/emr/non-functional-disclosure", "order": 6 }
       ]
     },
     {
@@ -94,26 +97,34 @@
   "sourceDocuments": [
     {
       "id": "clinic-emr",
-      "title": "医科診療所向け電子カルテ標準仕様書（基本要件）（案）",
-      "publisher": "厚生労働省",
+      "title": "医科診療所向け電子カルテ標準仕様書（基本要件）【第1.0版】",
+      "publisher": "厚生労働省医政局・保険局、デジタル庁",
+      "version": "1.0",
+      "lastUpdated": "令和8年3月31日",
       "sections": ["emr/clinic"]
     },
     {
       "id": "hospital-emr",
-      "title": "中小病院向け電子カルテ標準仕様書（基本要件）（案）",
-      "publisher": "厚生労働省",
+      "title": "中小病院向け電子カルテ標準仕様書（基本要件）【第1.0版】",
+      "publisher": "厚生労働省医政局・保険局、デジタル庁",
+      "version": "1.0",
+      "lastUpdated": "令和8年3月31日",
       "sections": ["emr/hospital"]
     },
     {
       "id": "clinic-rececom",
-      "title": "医科診療所向けレセプトコンピュータ標準仕様書（基本要件）（案）",
-      "publisher": "厚生労働省",
+      "title": "医科診療所向けレセプトコンピュータ標準仕様書（基本要件）【第1.0版】",
+      "publisher": "厚生労働省医政局・保険局、デジタル庁",
+      "version": "1.0",
+      "lastUpdated": "令和8年3月31日",
       "sections": ["rececom/clinic"]
     },
     {
       "id": "hospital-rececom",
-      "title": "中小病院向けレセプトコンピュータ標準仕様書（基本要件）（案）",
-      "publisher": "厚生労働省",
+      "title": "中小病院向けレセプトコンピュータ標準仕様書（基本要件）【第1.0版】",
+      "publisher": "厚生労働省医政局・保険局、デジタル庁",
+      "version": "1.0",
+      "lastUpdated": "令和8年3月31日",
       "sections": ["rececom/hospital"]
     },
     {

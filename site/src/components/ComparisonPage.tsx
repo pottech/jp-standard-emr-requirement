@@ -958,13 +958,13 @@ export function ComparisonPage({ clinicEmr, hospitalEmr, clinicRececom, hospital
               <li className="flex gap-2">
                 <span className="shrink-0 mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 <span>
-                  <TypeBadge type="参考" /> データ移行（ポータビリティ）— 検討中
+                  <TypeBadge type="参考" /> データ移行（ポータビリティ）— 次版以降において設定予定
                 </span>
               </li>
               <li className="flex gap-2">
                 <span className="shrink-0 mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 <span>
-                  <TypeBadge type="参考" /> 部門システム・業務効率化ツールとのAPI仕様 — 検討中
+                  <TypeBadge type="参考" /> 部門システム・業務効率化ツールとのAPI仕様 — 次版以降において設定予定
                 </span>
               </li>
             </ul>

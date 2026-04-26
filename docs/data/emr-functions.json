@@ -1,0 +1,1341 @@
+{
+  "documentTitle": "電子カルテ提示対象機能一覧（別紙様式１）",
+  "description": "電子カルテシステムに実装された機能を医療機関に提示する際に使用する様式",
+  "source": "中小病院向け電子カルテ及びレセプトコンピュータ標準仕様書（基本要件）【第1.0版】第1章別紙様式1",
+  "version": "1.0",
+  "lastUpdated": "令和8年3月31日",
+  "implementationStatus": {
+    "implemented": "●：実装あり",
+    "alternative": "○：他機能で代替",
+    "partial": "△：一部実装",
+    "notImplemented": "×：実装なし"
+  },
+  "categories": [
+    {
+      "name": "外来予約",
+      "count": 2
+    },
+    {
+      "name": "受付",
+      "count": 11
+    },
+    {
+      "name": "診察",
+      "count": 7
+    },
+    {
+      "name": "検体検査",
+      "count": 7
+    },
+    {
+      "name": "細菌検査",
+      "count": 6
+    },
+    {
+      "name": "病理検査",
+      "count": 6
+    },
+    {
+      "name": "生理検査",
+      "count": 5
+    },
+    {
+      "name": "放射線検査",
+      "count": 5
+    },
+    {
+      "name": "内視鏡検査",
+      "count": 5
+    },
+    {
+      "name": "処方",
+      "count": 8
+    },
+    {
+      "name": "処置",
+      "count": 5
+    },
+    {
+      "name": "注射",
+      "count": 7
+    },
+    {
+      "name": "透析",
+      "count": 6
+    },
+    {
+      "name": "リハビリ",
+      "count": 8
+    },
+    {
+      "name": "指導",
+      "count": 5
+    },
+    {
+      "name": "化学療法",
+      "count": 6
+    },
+    {
+      "name": "会計",
+      "count": 1
+    },
+    {
+      "name": "病床管理",
+      "count": 17
+    },
+    {
+      "name": "患者状態管理",
+      "count": 6
+    },
+    {
+      "name": "手術",
+      "count": 5
+    },
+    {
+      "name": "食事",
+      "count": 3
+    },
+    {
+      "name": "訪問診療",
+      "count": 6
+    },
+    {
+      "name": "訪問看護",
+      "count": 8
+    },
+    {
+      "name": "訪問リハビリ",
+      "count": 5
+    },
+    {
+      "name": "健診",
+      "count": 6
+    },
+    {
+      "name": "物品管理",
+      "count": 1
+    },
+    {
+      "name": "安全管理",
+      "count": 1
+    },
+    {
+      "name": "マスタ管理",
+      "count": 5
+    },
+    {
+      "name": "文書管理",
+      "count": 3
+    },
+    {
+      "name": "共通機能",
+      "count": 6
+    }
+  ],
+  "functions": [
+    {
+      "itemNo": 3,
+      "category": "外来予約",
+      "functionName": "外来予約",
+      "branchNo": 1,
+      "requirement": "外来予約を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 4,
+      "category": "外来予約",
+      "functionName": "外来予約",
+      "branchNo": 2,
+      "requirement": "診察予約情報を一覧表示できること。"
+    },
+    {
+      "itemNo": 5,
+      "category": "受付",
+      "functionName": "外来受付",
+      "branchNo": 1,
+      "requirement": "外来患者を受付登録できること。"
+    },
+    {
+      "itemNo": 6,
+      "category": "受付",
+      "functionName": "外来受付",
+      "branchNo": 2,
+      "requirement": "受付時に受付表を印刷できること。"
+    },
+    {
+      "itemNo": 7,
+      "category": "受付",
+      "functionName": "外来受付",
+      "branchNo": 3,
+      "requirement": "受付患者を一覧表示できること。"
+    },
+    {
+      "itemNo": 8,
+      "category": "受付",
+      "functionName": "外来受付",
+      "branchNo": 4,
+      "requirement": "オンライン資格確認端末と連携できること。"
+    },
+    {
+      "itemNo": 9,
+      "category": "受付",
+      "functionName": "外来受付",
+      "branchNo": 5,
+      "requirement": "自動再来受付機と連携できること。"
+    },
+    {
+      "itemNo": 10,
+      "category": "受付",
+      "functionName": "救急受付",
+      "branchNo": 6,
+      "requirement": "救急患者を受付登録できること。"
+    },
+    {
+      "itemNo": 11,
+      "category": "受付",
+      "functionName": "救急受付",
+      "branchNo": 7,
+      "requirement": "救急外来対象患者を一覧表示できること。"
+    },
+    {
+      "itemNo": 12,
+      "category": "受付",
+      "functionName": "救急受付",
+      "branchNo": 8,
+      "requirement": "トリアージ区分などの救急情報の登録ができること。"
+    },
+    {
+      "itemNo": 13,
+      "category": "受付",
+      "functionName": "患者登録",
+      "branchNo": 9,
+      "requirement": "患者情報を登録・変更できること。"
+    },
+    {
+      "itemNo": 14,
+      "category": "受付",
+      "functionName": "患者登録",
+      "branchNo": 10,
+      "requirement": "禁忌・障害等の患者重要情報を登録・変更できること。"
+    },
+    {
+      "itemNo": 15,
+      "category": "受付",
+      "functionName": "患者検索",
+      "branchNo": 11,
+      "requirement": "患者氏名・ID等で患者検索できること。"
+    },
+    {
+      "itemNo": 16,
+      "category": "診察",
+      "functionName": "カルテ記録",
+      "branchNo": 1,
+      "requirement": "カルテ記載欄にSOAP形式での記載ができること。"
+    },
+    {
+      "itemNo": 17,
+      "category": "診察",
+      "functionName": "カルテ記録",
+      "branchNo": 2,
+      "requirement": "シェーマが利用できること。"
+    },
+    {
+      "itemNo": 18,
+      "category": "診察",
+      "functionName": "カルテ記録",
+      "branchNo": 3,
+      "requirement": "記載フォーマット（ひな形）を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 19,
+      "category": "診察",
+      "functionName": "病名登録",
+      "branchNo": 4,
+      "requirement": "病名・転帰を登録できること。"
+    },
+    {
+      "itemNo": 20,
+      "category": "診察",
+      "functionName": "紹介状作成",
+      "branchNo": 5,
+      "requirement": "紹介状を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 21,
+      "category": "診察",
+      "functionName": "紹介状作成",
+      "branchNo": 6,
+      "requirement": "紹介状の送付/返書状況等のステータスを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 22,
+      "category": "診察",
+      "functionName": "紹介状作成",
+      "branchNo": 7,
+      "requirement": "紹介状を印刷できること。"
+    },
+    {
+      "itemNo": 23,
+      "category": "検体検査",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "検体検査オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 24,
+      "category": "検体検査",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 25,
+      "category": "検体検査",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 3,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 26,
+      "category": "検体検査",
+      "functionName": "ラベル印刷",
+      "branchNo": 4,
+      "requirement": "検体ラベルを印刷できること。"
+    },
+    {
+      "itemNo": 27,
+      "category": "検体検査",
+      "functionName": "検査受付",
+      "branchNo": 5,
+      "requirement": "検査受付登録できること。"
+    },
+    {
+      "itemNo": 28,
+      "category": "検体検査",
+      "functionName": "検査結果入力",
+      "branchNo": 6,
+      "requirement": "検査結果を承認・登録できること。"
+    },
+    {
+      "itemNo": 29,
+      "category": "検体検査",
+      "functionName": "部門システム連携",
+      "branchNo": 7,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 30,
+      "category": "細菌検査",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "細菌検査オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 31,
+      "category": "細菌検査",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 32,
+      "category": "細菌検査",
+      "functionName": "ラベル印刷",
+      "branchNo": 3,
+      "requirement": "検体ラベルを印刷できること。"
+    },
+    {
+      "itemNo": 33,
+      "category": "細菌検査",
+      "functionName": "検査受付",
+      "branchNo": 4,
+      "requirement": "検査受付登録できること。"
+    },
+    {
+      "itemNo": 34,
+      "category": "細菌検査",
+      "functionName": "検査結果入力",
+      "branchNo": 5,
+      "requirement": "検査結果を承認・登録できること。"
+    },
+    {
+      "itemNo": 35,
+      "category": "細菌検査",
+      "functionName": "部門システム連携",
+      "branchNo": 6,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 36,
+      "category": "病理検査",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "病理検査オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 37,
+      "category": "病理検査",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 38,
+      "category": "病理検査",
+      "functionName": "ラベル印刷",
+      "branchNo": 3,
+      "requirement": "検体ラベルを印刷できること。"
+    },
+    {
+      "itemNo": 39,
+      "category": "病理検査",
+      "functionName": "検査受付",
+      "branchNo": 4,
+      "requirement": "検査受付登録できること。"
+    },
+    {
+      "itemNo": 40,
+      "category": "病理検査",
+      "functionName": "検査結果入力",
+      "branchNo": 5,
+      "requirement": "検査結果を承認・登録できること。"
+    },
+    {
+      "itemNo": 41,
+      "category": "病理検査",
+      "functionName": "部門システム連携",
+      "branchNo": 6,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 42,
+      "category": "生理検査",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "生理検査オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 43,
+      "category": "生理検査",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 44,
+      "category": "生理検査",
+      "functionName": "検査受付",
+      "branchNo": 3,
+      "requirement": "検査受付登録できること。"
+    },
+    {
+      "itemNo": 45,
+      "category": "生理検査",
+      "functionName": "検査結果入力",
+      "branchNo": 4,
+      "requirement": "検査結果を承認・登録できること。"
+    },
+    {
+      "itemNo": 46,
+      "category": "生理検査",
+      "functionName": "部門システム連携",
+      "branchNo": 5,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 47,
+      "category": "放射線検査",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "放射線検査オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 48,
+      "category": "放射線検査",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 49,
+      "category": "放射線検査",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 3,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 50,
+      "category": "放射線検査",
+      "functionName": "検査受付",
+      "branchNo": 4,
+      "requirement": "検査受付登録できること。"
+    },
+    {
+      "itemNo": 51,
+      "category": "放射線検査",
+      "functionName": "部門システム連携",
+      "branchNo": 5,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 52,
+      "category": "内視鏡検査",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "内視鏡検査オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 53,
+      "category": "内視鏡検査",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 54,
+      "category": "内視鏡検査",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 3,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 55,
+      "category": "内視鏡検査",
+      "functionName": "検査受付",
+      "branchNo": 4,
+      "requirement": "検査受付登録できること。"
+    },
+    {
+      "itemNo": 56,
+      "category": "内視鏡検査",
+      "functionName": "部門システム連携",
+      "branchNo": 5,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 57,
+      "category": "処方",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "処方オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 58,
+      "category": "処方",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 59,
+      "category": "処方",
+      "functionName": "オーダ",
+      "branchNo": 3,
+      "requirement": "禁忌薬チェックが適用されること。"
+    },
+    {
+      "itemNo": 60,
+      "category": "処方",
+      "functionName": "オーダ",
+      "branchNo": 4,
+      "requirement": "重複チェックが適用されること。"
+    },
+    {
+      "itemNo": 61,
+      "category": "処方",
+      "functionName": "オーダ",
+      "branchNo": 5,
+      "requirement": "極量チェックが適用されること。"
+    },
+    {
+      "itemNo": 62,
+      "category": "処方",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 6,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 63,
+      "category": "処方",
+      "functionName": "処方箋印刷",
+      "branchNo": 7,
+      "requirement": "処方箋を印刷できること。"
+    },
+    {
+      "itemNo": 64,
+      "category": "処方",
+      "functionName": "部門システム連携",
+      "branchNo": 8,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 65,
+      "category": "処置",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "処置オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 66,
+      "category": "処置",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 67,
+      "category": "処置",
+      "functionName": "指示箋印刷",
+      "branchNo": 3,
+      "requirement": "指示箋を印刷できること。"
+    },
+    {
+      "itemNo": 68,
+      "category": "処置",
+      "functionName": "実施入力",
+      "branchNo": 4,
+      "requirement": "実施登録できること。"
+    },
+    {
+      "itemNo": 69,
+      "category": "処置",
+      "functionName": "処置対象患者一覧",
+      "branchNo": 5,
+      "requirement": "処置オーダのある患者を一覧表示できること。"
+    },
+    {
+      "itemNo": 70,
+      "category": "注射",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "注射オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 71,
+      "category": "注射",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 72,
+      "category": "注射",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 3,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 73,
+      "category": "注射",
+      "functionName": "注射箋印刷",
+      "branchNo": 4,
+      "requirement": "注射箋を印刷できること。"
+    },
+    {
+      "itemNo": 74,
+      "category": "注射",
+      "functionName": "ラベル印刷",
+      "branchNo": 5,
+      "requirement": "注射ラベルを印刷できること。"
+    },
+    {
+      "itemNo": 75,
+      "category": "注射",
+      "functionName": "患者認証",
+      "branchNo": 6,
+      "requirement": "患者、薬剤、看護師をそれぞれバーコードで三点認証できること。"
+    },
+    {
+      "itemNo": 76,
+      "category": "注射",
+      "functionName": "実施入力",
+      "branchNo": 7,
+      "requirement": "実施登録できること。"
+    },
+    {
+      "itemNo": 77,
+      "category": "透析",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "透析指示をセットでオーダ登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 78,
+      "category": "透析",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 79,
+      "category": "透析",
+      "functionName": "予約",
+      "branchNo": 3,
+      "requirement": "透析ベッドを予約登録できること。"
+    },
+    {
+      "itemNo": 80,
+      "category": "透析",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 4,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 81,
+      "category": "透析",
+      "functionName": "経過表作成",
+      "branchNo": 5,
+      "requirement": "経過表に患者状態を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 82,
+      "category": "透析",
+      "functionName": "部門システム連携",
+      "branchNo": 6,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 83,
+      "category": "リハビリ",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "リハビリオーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 84,
+      "category": "リハビリ",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 85,
+      "category": "リハビリ",
+      "functionName": "予約",
+      "branchNo": 3,
+      "requirement": "担当療法士を選択し予約登録できること。"
+    },
+    {
+      "itemNo": 86,
+      "category": "リハビリ",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 4,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 87,
+      "category": "リハビリ",
+      "functionName": "計画書作成",
+      "branchNo": 5,
+      "requirement": "リハビリ実施計画書を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 88,
+      "category": "リハビリ",
+      "functionName": "受付",
+      "branchNo": 6,
+      "requirement": "リハビリ受付登録ができること。"
+    },
+    {
+      "itemNo": 89,
+      "category": "リハビリ",
+      "functionName": "カルテ記録",
+      "branchNo": 7,
+      "requirement": "リハビリ内容記録欄があること。"
+    },
+    {
+      "itemNo": 90,
+      "category": "リハビリ",
+      "functionName": "部門システム連携",
+      "branchNo": 8,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 91,
+      "category": "指導",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "指導オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 92,
+      "category": "指導",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "Doオーダを登録できること。"
+    },
+    {
+      "itemNo": 93,
+      "category": "指導",
+      "functionName": "計画書作成",
+      "branchNo": 3,
+      "requirement": "指導計画書を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 94,
+      "category": "指導",
+      "functionName": "受付",
+      "branchNo": 4,
+      "requirement": "指導受付登録ができること。"
+    },
+    {
+      "itemNo": 95,
+      "category": "指導",
+      "functionName": "実施入力",
+      "branchNo": 5,
+      "requirement": "実施登録できること。"
+    },
+    {
+      "itemNo": 96,
+      "category": "化学療法",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "レジメンの計画登録・変更・削除ができること。"
+    },
+    {
+      "itemNo": 97,
+      "category": "化学療法",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "次クールのレジメンの計画登録ができること。"
+    },
+    {
+      "itemNo": 98,
+      "category": "化学療法",
+      "functionName": "ベッド予約",
+      "branchNo": 3,
+      "requirement": "化学療法ベッドを予約登録できること。"
+    },
+    {
+      "itemNo": 99,
+      "category": "化学療法",
+      "functionName": "患者認証",
+      "branchNo": 4,
+      "requirement": "患者、薬剤、看護師をそれぞれバーコードで三点認証できること。"
+    },
+    {
+      "itemNo": 100,
+      "category": "化学療法",
+      "functionName": "実施入力",
+      "branchNo": 5,
+      "requirement": "実施登録できること。"
+    },
+    {
+      "itemNo": 101,
+      "category": "化学療法",
+      "functionName": "経過表作成",
+      "branchNo": 6,
+      "requirement": "経過表に患者状態を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 102,
+      "category": "会計",
+      "functionName": "レセコン連携",
+      "branchNo": 1,
+      "requirement": "レセコンと連携できること。"
+    },
+    {
+      "itemNo": 103,
+      "category": "病床管理",
+      "functionName": "入院予約",
+      "branchNo": 1,
+      "requirement": "入院予約を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 104,
+      "category": "病床管理",
+      "functionName": "入院予約",
+      "branchNo": 2,
+      "requirement": "入院予約情報を一覧表示できること。"
+    },
+    {
+      "itemNo": 105,
+      "category": "病床管理",
+      "functionName": "入院受付",
+      "branchNo": 3,
+      "requirement": "入院予約を入院確定登録できること。"
+    },
+    {
+      "itemNo": 106,
+      "category": "病床管理",
+      "functionName": "入院受付",
+      "branchNo": 4,
+      "requirement": "入院確定登録後、入院内容を病床マップへ反映できること。"
+    },
+    {
+      "itemNo": 107,
+      "category": "病床管理",
+      "functionName": "入院受付",
+      "branchNo": 5,
+      "requirement": "入院診療計画書を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 108,
+      "category": "病床管理",
+      "functionName": "入院受付",
+      "branchNo": 6,
+      "requirement": "クリティカルパスを適用登録できること。"
+    },
+    {
+      "itemNo": 109,
+      "category": "病床管理",
+      "functionName": "入院受付",
+      "branchNo": 7,
+      "requirement": "持参薬を登録できること。"
+    },
+    {
+      "itemNo": 110,
+      "category": "病床管理",
+      "functionName": "病床マップ",
+      "branchNo": 8,
+      "requirement": "病床マップを表示できること。"
+    },
+    {
+      "itemNo": 111,
+      "category": "病床管理",
+      "functionName": "病床マップ",
+      "branchNo": 9,
+      "requirement": "入退院患者情報を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 112,
+      "category": "病床管理",
+      "functionName": "病床マップ",
+      "branchNo": 10,
+      "requirement": "移動情報を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 113,
+      "category": "病床管理",
+      "functionName": "管理日誌",
+      "branchNo": 11,
+      "requirement": "看護管理日誌を登録・変更できること。"
+    },
+    {
+      "itemNo": 114,
+      "category": "病床管理",
+      "functionName": "管理日誌",
+      "branchNo": 12,
+      "requirement": "看護管理日誌を承認登録できること。"
+    },
+    {
+      "itemNo": 115,
+      "category": "病床管理",
+      "functionName": "退院オーダ",
+      "branchNo": 13,
+      "requirement": "退院オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 116,
+      "category": "病床管理",
+      "functionName": "退院オーダ",
+      "branchNo": 14,
+      "requirement": "退院オーダ情報を一覧表示できること。"
+    },
+    {
+      "itemNo": 117,
+      "category": "病床管理",
+      "functionName": "退院サマリ",
+      "branchNo": 15,
+      "requirement": "退院サマリを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 118,
+      "category": "病床管理",
+      "functionName": "退院確定",
+      "branchNo": 16,
+      "requirement": "退院確定登録ができること。"
+    },
+    {
+      "itemNo": 119,
+      "category": "病床管理",
+      "functionName": "退院確定",
+      "branchNo": 17,
+      "requirement": "退院確定登録後、退院内容を病床マップへ反映できること。"
+    },
+    {
+      "itemNo": 120,
+      "category": "患者状態管理",
+      "functionName": "経過表作成",
+      "branchNo": 1,
+      "requirement": "経過表に患者状態を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 121,
+      "category": "患者状態管理",
+      "functionName": "看護記録",
+      "branchNo": 2,
+      "requirement": "看護記録の自由記録欄があること。"
+    },
+    {
+      "itemNo": 122,
+      "category": "患者状態管理",
+      "functionName": "看護計画作成",
+      "branchNo": 3,
+      "requirement": "看護計画を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 123,
+      "category": "患者状態管理",
+      "functionName": "チーム医療",
+      "branchNo": 4,
+      "requirement": "多職種が情報連携できる記載欄があること。"
+    },
+    {
+      "itemNo": 124,
+      "category": "患者状態管理",
+      "functionName": "チーム医療",
+      "branchNo": 5,
+      "requirement": "褥瘡有無や状態を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 125,
+      "category": "患者状態管理",
+      "functionName": "オーダ/予定管理",
+      "branchNo": 6,
+      "requirement": "患者別オーダ・予定管理画面があること。"
+    },
+    {
+      "itemNo": 126,
+      "category": "手術",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "手術オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 127,
+      "category": "手術",
+      "functionName": "オーダ",
+      "branchNo": 2,
+      "requirement": "輸血オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 128,
+      "category": "手術",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 3,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 129,
+      "category": "手術",
+      "functionName": "レポート作成",
+      "branchNo": 4,
+      "requirement": "手術レポートを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 130,
+      "category": "手術",
+      "functionName": "部門システム連携",
+      "branchNo": 5,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 131,
+      "category": "食事",
+      "functionName": "オーダ",
+      "branchNo": 1,
+      "requirement": "食事オーダを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 132,
+      "category": "食事",
+      "functionName": "計画書作成",
+      "branchNo": 2,
+      "requirement": "栄養管理計画書を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 133,
+      "category": "食事",
+      "functionName": "部門システム連携",
+      "branchNo": 3,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 134,
+      "category": "訪問診療",
+      "functionName": "計画書作成",
+      "branchNo": 1,
+      "requirement": "訪問診療計画書を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 135,
+      "category": "訪問診療",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 2,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 136,
+      "category": "訪問診療",
+      "functionName": "カルテ記録",
+      "branchNo": 3,
+      "requirement": "カルテ内に自由記録欄およびSOAP形式記録欄があること。"
+    },
+    {
+      "itemNo": 137,
+      "category": "訪問診療",
+      "functionName": "カルテ記録",
+      "branchNo": 4,
+      "requirement": "シェーマが利用できること。"
+    },
+    {
+      "itemNo": 138,
+      "category": "訪問診療",
+      "functionName": "カルテ記録",
+      "branchNo": 5,
+      "requirement": "記載フォーマット（ひな形）を登録・更新・削除できること。"
+    },
+    {
+      "itemNo": 139,
+      "category": "訪問診療",
+      "functionName": "部門システム連携",
+      "branchNo": 6,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 140,
+      "category": "訪問看護",
+      "functionName": "計画書作成",
+      "branchNo": 1,
+      "requirement": "訪問看護指示書を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 141,
+      "category": "訪問看護",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 2,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 142,
+      "category": "訪問看護",
+      "functionName": "経過表作成",
+      "branchNo": 3,
+      "requirement": "経過表に患者状態を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 143,
+      "category": "訪問看護",
+      "functionName": "看護記録",
+      "branchNo": 4,
+      "requirement": "看護記録の自由記録欄があること。"
+    },
+    {
+      "itemNo": 144,
+      "category": "訪問看護",
+      "functionName": "チーム医療",
+      "branchNo": 5,
+      "requirement": "多職種が情報連携できる記載欄があること。"
+    },
+    {
+      "itemNo": 145,
+      "category": "訪問看護",
+      "functionName": "チーム医療",
+      "branchNo": 6,
+      "requirement": "褥瘡有無や状態を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 146,
+      "category": "訪問看護",
+      "functionName": "オーダ/予定管理",
+      "branchNo": 7,
+      "requirement": "患者別オーダ・予定管理画面があること。"
+    },
+    {
+      "itemNo": 147,
+      "category": "訪問看護",
+      "functionName": "部門システム連携",
+      "branchNo": 8,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 148,
+      "category": "訪問リハビリ",
+      "functionName": "計画書作成",
+      "branchNo": 1,
+      "requirement": "訪問リハビリ指示書を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 149,
+      "category": "訪問リハビリ",
+      "functionName": "計画書作成",
+      "branchNo": 2,
+      "requirement": "リハビリテーション実施計画書を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 150,
+      "category": "訪問リハビリ",
+      "functionName": "同意書・説明書印刷",
+      "branchNo": 3,
+      "requirement": "同意書・説明書を印刷できること。"
+    },
+    {
+      "itemNo": 151,
+      "category": "訪問リハビリ",
+      "functionName": "カルテ記録",
+      "branchNo": 4,
+      "requirement": "リハビリ内容記録欄があること。"
+    },
+    {
+      "itemNo": 152,
+      "category": "訪問リハビリ",
+      "functionName": "部門システム連携",
+      "branchNo": 5,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 153,
+      "category": "健診",
+      "functionName": "健診予約",
+      "branchNo": 1,
+      "requirement": "健診予約を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 154,
+      "category": "健診",
+      "functionName": "健診予約",
+      "branchNo": 2,
+      "requirement": "健診予約情報を一覧表示できること。"
+    },
+    {
+      "itemNo": 155,
+      "category": "健診",
+      "functionName": "健診受付",
+      "branchNo": 3,
+      "requirement": "健診受診者を受付登録ができること。"
+    },
+    {
+      "itemNo": 156,
+      "category": "健診",
+      "functionName": "健診受付",
+      "branchNo": 4,
+      "requirement": "健診内容を変更・削除できること。"
+    },
+    {
+      "itemNo": 157,
+      "category": "健診",
+      "functionName": "保健指導",
+      "branchNo": 5,
+      "requirement": "支援計画書を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 158,
+      "category": "健診",
+      "functionName": "部門システム連携",
+      "branchNo": 6,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 159,
+      "category": "物品管理",
+      "functionName": "部門システム連携",
+      "branchNo": 1,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 160,
+      "category": "安全管理",
+      "functionName": "部門システム連携",
+      "branchNo": 1,
+      "requirement": "部門システムと連携できること。"
+    },
+    {
+      "itemNo": 161,
+      "category": "マスタ管理",
+      "functionName": "医事マスタ",
+      "branchNo": 1,
+      "requirement": "医事マスタを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 162,
+      "category": "マスタ管理",
+      "functionName": "医薬品マスタ",
+      "branchNo": 2,
+      "requirement": "医薬品マスタを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 163,
+      "category": "マスタ管理",
+      "functionName": "検査マスタ",
+      "branchNo": 3,
+      "requirement": "検査マスタを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 164,
+      "category": "マスタ管理",
+      "functionName": "特定器材マスタ",
+      "branchNo": 4,
+      "requirement": "特定器材マスタを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 165,
+      "category": "マスタ管理",
+      "functionName": "その他マスタ",
+      "branchNo": 5,
+      "requirement": "その他電子カルテ機能に必要なマスタを登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 166,
+      "category": "文書管理",
+      "functionName": "院内文書管理",
+      "branchNo": 1,
+      "requirement": "院内文書の雛形を登録・変更・削除できること。"
+    },
+    {
+      "itemNo": 167,
+      "category": "文書管理",
+      "functionName": "院内文書管理",
+      "branchNo": 2,
+      "requirement": "院内文書の登録・変更・削除が行えること。"
+    },
+    {
+      "itemNo": 168,
+      "category": "文書管理",
+      "functionName": "院内文書管理",
+      "branchNo": 3,
+      "requirement": "診療に必要な紙文書を電子データで保管できること。（スキャン等）"
+    },
+    {
+      "itemNo": 169,
+      "category": "共通機能",
+      "functionName": "ユーザ管理",
+      "branchNo": 1,
+      "requirement": "ユーザ情報を登録・変更できること。"
+    },
+    {
+      "itemNo": 170,
+      "category": "共通機能",
+      "functionName": "ユーザ管理",
+      "branchNo": 2,
+      "requirement": "ユーザ別に機能使用制限等の権限管理ができること。"
+    },
+    {
+      "itemNo": 171,
+      "category": "共通機能",
+      "functionName": "ログイン・ログアウト",
+      "branchNo": 3,
+      "requirement": "ユーザ登録情報を用いてログインできること。"
+    },
+    {
+      "itemNo": 172,
+      "category": "共通機能",
+      "functionName": "ログイン・ログアウト",
+      "branchNo": 4,
+      "requirement": "使用後ログアウトできること。"
+    },
+    {
+      "itemNo": 173,
+      "category": "共通機能",
+      "functionName": "ログイン・ログアウト",
+      "branchNo": 5,
+      "requirement": "二要素認証を有すること。"
+    },
+    {
+      "itemNo": 174,
+      "category": "共通機能",
+      "functionName": "排他制御",
+      "branchNo": 6,
+      "requirement": "同時操作に対し排他制御ができること。"
+    }
+  ]
+}
