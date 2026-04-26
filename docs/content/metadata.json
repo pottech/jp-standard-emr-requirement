@@ -17,7 +17,9 @@
         { "title": "機能情報公開", "path": "/emr/disclosure", "order": 3 },
         { "title": "システム連携・API仕様", "path": "/emr/integration", "order": 4 },
         { "title": "提示対象機能一覧", "path": "/emr/functions", "order": 5 },
-        { "title": "非機能要件 要開示項目", "path": "/emr/non-functional-disclosure", "order": 6 }
+        { "title": "非機能要件 要開示項目", "path": "/emr/non-functional-disclosure", "order": 6 },
+        { "title": "連携共通仕様・部門API", "path": "/emr/integration-spec", "order": 7 },
+        { "title": "データ移行仕様", "path": "/emr/data-migration", "order": 8 }
       ]
     },
     {
